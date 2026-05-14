@@ -1,0 +1,10 @@
+Variable,Label,Pos_Mean,Others_Mean,Diff,Cohen_d,p_value,Significant
+N2_Adolescent_Fertility,10대 출산율,21.954,37.496,-15.542,-0.434,0.4161,❌
+N4_Physicians_per_1000,의사 수(1000명당),2.952,2.309,0.642,0.394,0.172,❌
+N5_Child_Marriage_Female,여성 조혼율(%),9.763,13.642,-3.879,-0.299,0.6193,❌
+F3_Pupil_Teacher_Ratio,교사-학생 비율,18.938,21.804,-2.866,-0.265,0.3425,❌
+N1_Under5_Mortality,유아 사망률,15.381,21.055,-5.674,-0.233,0.123,❌
+F2_Gov_Edu_Exp,교육지출(%GDP),3.93,4.118,-0.188,-0.147,0.6508,❌
+F7_Completion_Rate,초등 수료율(%),92.768,90.741,2.027,0.137,0.1695,❌
+G_AVG_Governance,거버넌스 지수(WGI),0.073,0.161,-0.089,-0.094,0.9712,❌
+N3_Electricity_Access,전기 보급률(%),90.005,90.746,-0.741,-0.035,0.0803,❌

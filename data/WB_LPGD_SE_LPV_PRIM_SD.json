@@ -1,0 +1,662 @@
+{
+    "schema": "https://ihsn.org/schemas/timeseries/1.0.0",
+    "schema_version": "1.0.0",
+    "type": "timeseries",
+    "idno": "d6d3dd14-16dc-41f4-9d91-53d0f959a98f",
+    "changed": "1770262278",
+    "changed_utc": "2026-02-04T22:31:18-05:00",
+    "created": "1714568318",
+    "created_utc": "2024-05-01T08:58:38-04:00",
+    "created_by": "51",
+    "changed_by": "6",
+    "metadata_information": {
+        "idno": "META_WB_LPGD_SE_LPV_PRIM_SD",
+        "producers": [
+            {
+                "name": "Development Economics Data Group",
+                "abbr": "DECDG",
+                "affiliation": "World Bank"
+            }
+        ],
+        "prod_date": "2024-05-14",
+        "version_statement": {
+            "version_notes": "Updated title formatting for consistency.",
+            "version_date": "2025-03-17",
+            "version": "1.1"
+        },
+        "title": "Metadata for Primary school age children out-of-school (%)"
+    },
+    "series_description": {
+        "name": "Primary school age children out-of-school (%)",
+        "idno": "WB_LPGD_SE_LPV_PRIM_SD",
+        "alternate_identifiers": [
+            {
+                "identifier": "WB_WDI_SE_LPV_PRIM_SD",
+                "name": "Primary",
+                "database": "WB_WDI"
+            }
+        ],
+        "database_id": "WB_LPGD",
+        "languages": [
+            {
+                "name": "English",
+                "code": "EN"
+            }
+        ],
+        "definition_long": "The share of children of primary-school age who are out of school or schooling deprived. This dimension is linked to the indicator 4.1.4 from the SDG 4 thematic framework. This element reflects the belief that all primary-age children should be learning in schools of some type, a belief that every country has enshrined in law and that is enshrined in the SDGs. In addition to fulfilling a universal right and serving as a necessary condition for sustained learning, schooling offers many benefits beyond learning. It contributes to children\u2019s health and well-being such as promoting safety, nutrition, and socialization, and facilitating parents' labor market participation and, at the macro level, schooling can help build social cohesion, democracy, and peace. All those complementary functions mean that schooling has value over and above the measured cognitive learning that it leads to, and they justify including schooling deprivation in the concept of learning poverty.",
+        "definition_references": [
+            {
+                "source": "World Bank",
+                "uri": "https://www.worldbank.org/en/topic/education/brief/what-is-learning-poverty"
+            }
+        ],
+        "relevance": "Ensuring that all students read with comprehension is essential to achieving the ambitious SDG targets and to building human capital. Children need to learn to read so that they can read to learn. Those who do not become proficient in reading by the end of primary school often cannot catch up later, because the curriculum of every school system assumes that secondary-school students can learn through reading. Reading is a gateway to all types of academic learning.  In high-income countries, 90% of all children learn to read with comprehension before the end of primary school, and for the highest-performing countries, the figure reaches 97% or more. Yet past evidence from many low- and middle-income countries has shown that many children are not learning to read with comprehension in primary school. \nThe LP indicator illustrates progress toward SDG 4\u2019s broader goal of ensuring inclusive and equitable quality education for all. It particularly highlights progress towards SDG 4.1.1(b) and SDG 4.1.4, which specifies that all children attend primary school and reach at least a minimum proficiency level in reading at the end of primary. The indicator is also aligned with the World Bank\u2019s Human Capital Project, which aims to ensure that children reach their full potential in school and in life. The ability to read with comprehension is a foundational skill that every education system around the world strives to impart by late in primary school\u2014generally by age 10. Moreover, attaining the ambitious Sustainable Development Goals (SDGs) in education requires first to achieving this basic building block, and so does improving countries\u2019 Human Capital Index scores.",
+        "authoring_entity": [
+            {
+                "name": "World Bank"
+            }
+        ],
+        "measurement_unit": "Percentage",
+        "dimensions": [
+            {
+                "label": "Year",
+                "description": "Total, Male, Female"
+            },
+            {
+                "label": "Sex",
+                "description": "Total, Male, Female"
+            },
+            {
+                "label": "Geographic area",
+                "description": "Country/economy, Region"
+            }
+        ],
+        "limitation": "The enrollment for a given learning poverty release are not strictly comparable between countries, due to the differences in enrollment years and definitions, which are determined by best-match with the assessment year and data availability of enrollment indicators. \nThe measure will also differ from out of school estimates using household survey data, which UIS reports for SDG 4.1.4. Households survey estimates are not used for Schooling Deprivation because data is typically reported for countries in various years and with time gaps. School surveys are more feasibly collected annually, while household data collection occurs every few years and can also depend on country demand. School surveys also allow more global consistency as the same survey and source data are used across countries. However, the source used to compute the total school-age population differ in some cases where a country provides their national estimates over the default UNDP population data. However, there are potential trade-offs in precision from school surveys as responses come from school representatives rather than using microdata.\nEnrollment indicators are based on annual school surveys, but do not necessarily reflect actual attendance or dropout rates during the year. Also, enrolment rate (any definition) is affected by different age-reference points for enrollment. The length of education differs across countries and can influence enrollment rates, although the International Standard Classification of Education (ISCED) tries to minimize the difference. For example, a shorter duration for primary education tends to increase the rate; a longer one to decrease it (in part because older children are more at risk of dropping out). Moreover, age at enrollment may be inaccurately estimated or misstated, especially in communities where registration of births is not strictly enforced. The population data further affects the reference age.\nDue to the limitations described, in some cases, country specialists will provide a data point that better reflects enrollment in the country.",
+        "methodology": "Schooling Deprivation is derived using enrollment rates computed by UIS using administrative records and follows the SDG 4.1.4 indicator. To ensure country coverage of data, we consider other enrollment definitions to use for learning poverty, if the first-best option is not available. \nWe construct an enrollment dataset from 1990 to the year of the current release, relying on multiple enrollment definitions. Our dataset is constructed from UIS (UNESCO Institute of Statistics), and other sources suggested by World Bank regional or country education specialists. Data sources are typically from administrative records (school registers or school censuses) for data on enrolment by age, and UNPD population estimates for school-age population (UIS). Enrolment by single years of age in all levels of education and the total primary-school-age population are used to compute enrollment rates.\nWe follow this hierarchy of enrollment definitions: Country specialist validated data > Adjusted Net Enrollment Rate (ANER) > Total Net Enrollment Rate (TNER) > Net enrollment rate (NER) > Gross Enrollment Rate (GER; if the gross enrollment rate is higher than 100%, it is adjusted to be 100%).\nOur preferred measure of school participation is ANER, because it accounts for some primary school aged children who might enter primary school early and advance to secondary school before they reach the official upper age limit of primary education. Adjusted net enrollment is a measure of both stock and flow and accounts for both age- and grade-based distortions, as it is the percent of primary school age children enrolled either in primary or secondary education, as opposed to gross enrollment which is the share of children of any age that are enrolled in primary school, or net enrollment which is the share of primary school age children that are enrolled in primary school. The next-best indicator is used if ANER is unavailable. In some cases, country specialists will provide a data point that reflects enrollment in the country better than UIS statistics which is used. In future Learning Poverty releases, the enrollment hierarchy may be adjusted as availability of indicator definitions change. \nThe enrollment year used is the one that best pairs with the assessment year used to compute Learning Deprivation. The year of the preferred assessment is the base. If the same enrollment year is not available, we use a step function to fill the data in with the value of the closest year. If there is data available for two years equally close to the year to fill, the older value is used. This procedure to extrapolate enrollment for missing values is required for us to pair the proficiency measure with enrollment measures from the same year, or its best proxy when enrollment is not available for the same year of the assessment.",
+        "aggregation_method": "Weighted average",
+        "time_periods": [
+            {
+                "start": "2001",
+                "end": "2023"
+            }
+        ],
+        "links": [
+            {
+                "type": "DDH",
+                "uri": "https://datacatalog.worldbank.org/int/search/dataset/0038947"
+            }
+        ],
+        "periodicity": "Annual",
+        "version_statement": {
+            "version_date": "2025-02-13"
+        },
+        "definition_short": "Primary school age children out-of-school (%)",
+        "ref_country": [
+            {
+                "code": "AFG",
+                "name": "Afghanistan"
+            },
+            {
+                "code": "ALB",
+                "name": "Albania"
+            },
+            {
+                "code": "ARE",
+                "name": "United Arab Emirates"
+            },
+            {
+                "code": "ARG",
+                "name": "Argentina"
+            },
+            {
+                "code": "ARM",
+                "name": "Armenia"
+            },
+            {
+                "code": "AUS",
+                "name": "Australia"
+            },
+            {
+                "code": "AUT",
+                "name": "Austria"
+            },
+            {
+                "code": "AZE",
+                "name": "Azerbaijan"
+            },
+            {
+                "code": "BDI",
+                "name": "Burundi"
+            },
+            {
+                "code": "BEL",
+                "name": "Belgium"
+            },
+            {
+                "code": "BEN",
+                "name": "Benin"
+            },
+            {
+                "code": "BFA",
+                "name": "Burkina Faso"
+            },
+            {
+                "code": "BGD",
+                "name": "Bangladesh"
+            },
+            {
+                "code": "BGR",
+                "name": "Bulgaria"
+            },
+            {
+                "code": "BHR",
+                "name": "Bahrain"
+            },
+            {
+                "code": "BLZ",
+                "name": "Belize"
+            },
+            {
+                "code": "BRA",
+                "name": "Brazil"
+            },
+            {
+                "code": "BWA",
+                "name": "Botswana"
+            },
+            {
+                "code": "CAN",
+                "name": "Canada"
+            },
+            {
+                "code": "CHL",
+                "name": "Chile"
+            },
+            {
+                "code": "CHN",
+                "name": "China"
+            },
+            {
+                "code": "CIV",
+                "name": "C\u00f4te d\u2019Ivoire"
+            },
+            {
+                "code": "CMR",
+                "name": "Cameroon"
+            },
+            {
+                "code": "COD",
+                "name": "Congo, Dem. Rep."
+            },
+            {
+                "code": "COG",
+                "name": "Congo, Rep."
+            },
+            {
+                "code": "COL",
+                "name": "Colombia"
+            },
+            {
+                "code": "COM",
+                "name": "Comoros"
+            },
+            {
+                "code": "CRI",
+                "name": "Costa Rica"
+            },
+            {
+                "code": "CYP",
+                "name": "Cyprus"
+            },
+            {
+                "code": "CZE",
+                "name": "Czechia"
+            },
+            {
+                "code": "DEU",
+                "name": "Germany"
+            },
+            {
+                "code": "DNK",
+                "name": "Denmark"
+            },
+            {
+                "code": "DOM",
+                "name": "Dominican Republic"
+            },
+            {
+                "code": "DZA",
+                "name": "Algeria"
+            },
+            {
+                "code": "ECU",
+                "name": "Ecuador"
+            },
+            {
+                "code": "EGY",
+                "name": "Egypt, Arab Rep."
+            },
+            {
+                "code": "ESP",
+                "name": "Spain"
+            },
+            {
+                "code": "ETH",
+                "name": "Ethiopia"
+            },
+            {
+                "code": "FIN",
+                "name": "Finland"
+            },
+            {
+                "code": "FRA",
+                "name": "France"
+            },
+            {
+                "code": "GAB",
+                "name": "Gabon"
+            },
+            {
+                "code": "GBR",
+                "name": "United Kingdom"
+            },
+            {
+                "code": "GEO",
+                "name": "Georgia"
+            },
+            {
+                "code": "GIN",
+                "name": "Guinea"
+            },
+            {
+                "code": "GRC",
+                "name": "Greece"
+            },
+            {
+                "code": "GTM",
+                "name": "Guatemala"
+            },
+            {
+                "code": "HKG",
+                "name": "Hong Kong SAR, China"
+            },
+            {
+                "code": "HND",
+                "name": "Honduras"
+            },
+            {
+                "code": "HRV",
+                "name": "Croatia"
+            },
+            {
+                "code": "HUN",
+                "name": "Hungary"
+            },
+            {
+                "code": "IDN",
+                "name": "Indonesia"
+            },
+            {
+                "code": "IND",
+                "name": "India"
+            },
+            {
+                "code": "IRL",
+                "name": "Ireland"
+            },
+            {
+                "code": "IRN",
+                "name": "Iran, Islamic Rep."
+            },
+            {
+                "code": "ISL",
+                "name": "Iceland"
+            },
+            {
+                "code": "ISR",
+                "name": "Israel"
+            },
+            {
+                "code": "ITA",
+                "name": "Italy"
+            },
+            {
+                "code": "JOR",
+                "name": "Jordan"
+            },
+            {
+                "code": "JPN",
+                "name": "Japan"
+            },
+            {
+                "code": "KAZ",
+                "name": "Kazakhstan"
+            },
+            {
+                "code": "KEN",
+                "name": "Kenya"
+            },
+            {
+                "code": "KGZ",
+                "name": "Kyrgyz Republic"
+            },
+            {
+                "code": "KHM",
+                "name": "Cambodia"
+            },
+            {
+                "code": "KOR",
+                "name": "Korea, Rep."
+            },
+            {
+                "code": "KWT",
+                "name": "Kuwait"
+            },
+            {
+                "code": "LAO",
+                "name": "Lao PDR"
+            },
+            {
+                "code": "LKA",
+                "name": "Sri Lanka"
+            },
+            {
+                "code": "LSO",
+                "name": "Lesotho"
+            },
+            {
+                "code": "LTU",
+                "name": "Lithuania"
+            },
+            {
+                "code": "LUX",
+                "name": "Luxembourg"
+            },
+            {
+                "code": "LVA",
+                "name": "Latvia"
+            },
+            {
+                "code": "MAC",
+                "name": "Macao SAR, China"
+            },
+            {
+                "code": "MAR",
+                "name": "Morocco"
+            },
+            {
+                "code": "MDA",
+                "name": "Moldova"
+            },
+            {
+                "code": "MDG",
+                "name": "Madagascar"
+            },
+            {
+                "code": "MEX",
+                "name": "Mexico"
+            },
+            {
+                "code": "MKD",
+                "name": "North Macedonia"
+            },
+            {
+                "code": "MLI",
+                "name": "Mali"
+            },
+            {
+                "code": "MLT",
+                "name": "Malta"
+            },
+            {
+                "code": "MMR",
+                "name": "Myanmar"
+            },
+            {
+                "code": "MNE",
+                "name": "Montenegro"
+            },
+            {
+                "code": "MNG",
+                "name": "Mongolia"
+            },
+            {
+                "code": "MRT",
+                "name": "Mauritania"
+            },
+            {
+                "code": "MUS",
+                "name": "Mauritius"
+            },
+            {
+                "code": "MYS",
+                "name": "Malaysia"
+            },
+            {
+                "code": "NER",
+                "name": "Niger"
+            },
+            {
+                "code": "NIC",
+                "name": "Nicaragua"
+            },
+            {
+                "code": "NLD",
+                "name": "Netherlands"
+            },
+            {
+                "code": "NOR",
+                "name": "Norway"
+            },
+            {
+                "code": "NZL",
+                "name": "New Zealand"
+            },
+            {
+                "code": "OMN",
+                "name": "Oman"
+            },
+            {
+                "code": "PAK",
+                "name": "Pakistan"
+            },
+            {
+                "code": "PAN",
+                "name": "Panama"
+            },
+            {
+                "code": "PER",
+                "name": "Peru"
+            },
+            {
+                "code": "PHL",
+                "name": "Philippines"
+            },
+            {
+                "code": "POL",
+                "name": "Poland"
+            },
+            {
+                "code": "PRT",
+                "name": "Portugal"
+            },
+            {
+                "code": "PRY",
+                "name": "Paraguay"
+            },
+            {
+                "code": "QAT",
+                "name": "Qatar"
+            },
+            {
+                "code": "ROU",
+                "name": "Romania"
+            },
+            {
+                "code": "RUS",
+                "name": "Russian Federation"
+            },
+            {
+                "code": "SAU",
+                "name": "Saudi Arabia"
+            },
+            {
+                "code": "SEN",
+                "name": "Senegal"
+            },
+            {
+                "code": "SGP",
+                "name": "Singapore"
+            },
+            {
+                "code": "SLV",
+                "name": "El Salvador"
+            },
+            {
+                "code": "SRB",
+                "name": "Serbia"
+            },
+            {
+                "code": "SVK",
+                "name": "Slovak Republic"
+            },
+            {
+                "code": "SVN",
+                "name": "Slovenia"
+            },
+            {
+                "code": "SWE",
+                "name": "Sweden"
+            },
+            {
+                "code": "TCD",
+                "name": "Chad"
+            },
+            {
+                "code": "TGO",
+                "name": "Togo"
+            },
+            {
+                "code": "THA",
+                "name": "Thailand"
+            },
+            {
+                "code": "TTO",
+                "name": "Trinidad and Tobago"
+            },
+            {
+                "code": "TUN",
+                "name": "Tunisia"
+            },
+            {
+                "code": "TUR",
+                "name": "T\u00fcrkiye"
+            },
+            {
+                "code": "UGA",
+                "name": "Uganda"
+            },
+            {
+                "code": "UKR",
+                "name": "Ukraine"
+            },
+            {
+                "code": "URY",
+                "name": "Uruguay"
+            },
+            {
+                "code": "USA",
+                "name": "United States"
+            },
+            {
+                "code": "UZB",
+                "name": "Uzbekistan"
+            },
+            {
+                "code": "VNM",
+                "name": "Vietnam"
+            },
+            {
+                "code": "XKX",
+                "name": "Kosovo"
+            },
+            {
+                "name": "Yemen, Rep.",
+                "code": "YEM"
+            },
+            {
+                "name": "South Africa",
+                "code": "ZAF"
+            },
+            {
+                "name": "Zambia",
+                "code": "ZMB"
+            }
+        ],
+        "sources": [
+            {
+                "name": "Learning Poverty Global Database",
+                "organization": "World Bank (WB)",
+                "uri": "https://prosperitydata360.worldbank.org/en/dataset/WB+LPGD"
+            },
+            {
+                "organization": "UN Educational, Scientific and Cultural Organization (UNESCO)",
+                "uri": "https://uis.unesco.org/"
+            }
+        ],
+        "title": "Primary school age children out-of-school (%)",
+        "license": [
+            {
+                "name": "CC BY 4.0",
+                "uri": "https://creativecommons.org/licenses/by/4.0/",
+                "note": "This work is provided under a Creative Commons 4.0 Attribution International License, with the following mandatory and binding addition:i. Any and all disputes arising under this License that cannot be settled amicably shall be submitted to mediation in accordance with the WIPO Mediation Rules in effect at the time the work was published. If the request for mediation is not resolved within forty-five (45) days of the request, either You or the Licensor may, pursuant to a notice of arbitration communicated by reasonable means to the other party refer the dispute to final and binding arbitration to be conducted in accordance with UNCITRAL Arbitration Rules as then in force. The arbitral tribunal shall consist of a sole arbitrator and the language of the proceedings shall be English unless otherwise agreed. The place of arbitration shall be where the Licensor has its headquarters. The arbitral proceedings shall be conducted remotely (e.g., via telephone conference or written submissions) whenever practicable, or held at the World Bank headquarters in Washington DC."
+            }
+        ],
+        "confidentiality_status": "PU",
+        "database_name": "Learning Poverty Global Database"
+    },
+    "tags": [
+        {
+            "tag": "WB_LPGD",
+            "tag_group": "feature-dataset-profile"
+        }
+    ],
+    "additional": {
+        "visualization": {
+            "chart_type": [
+                {
+                    "chart_types": "pie"
+                },
+                {
+                    "chart_types": "stackedBar"
+                }
+            ]
+        },
+        "metadata_link": [
+            {
+                "type": "primary",
+                "metadata_id": "META_WB_WDI_SE_LPV_PRIM_SD"
+            }
+        ]
+    },
+    "admin_metadata": {
+        "data360": {
+            "tags": [
+                {
+                    "tag": "WB_LPGD",
+                    "tag_group": "feature-dataset-profile"
+                }
+            ],
+            "visualization": {
+                "remove_chart": [
+                    {
+                        "chart_types": "stackedBar"
+                    },
+                    {
+                        "chart_types": "pie"
+                    }
+                ]
+            }
+        }
+    }
+}

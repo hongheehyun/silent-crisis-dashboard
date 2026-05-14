@@ -1,0 +1,1613 @@
+{
+  "summary": {
+    "total_countries": 103,
+    "avg_learning_poverty": 39.9,
+    "estimated_lp_children": 260000000
+  },
+  "rf_importance": [
+    {
+      "feature": "1인당 GDP",
+      "importance": 0.48,
+      "shap_direction": "negative"
+    },
+    {
+      "feature": "교사 1인당 학생 수",
+      "importance": 0.2,
+      "shap_direction": "positive"
+    },
+    {
+      "feature": "아동 발육부진율",
+      "importance": 0.13,
+      "shap_direction": "positive"
+    },
+    {
+      "feature": "순등록률",
+      "importance": 0.05,
+      "shap_direction": "negative"
+    },
+    {
+      "feature": "인터넷 사용률",
+      "importance": 0.04,
+      "shap_direction": "negative"
+    }
+  ],
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "avg_learning_poverty": 9.6,
+      "features": {
+        "gdp": 63934.0,
+        "pupil_teacher": 13.3,
+        "stunting": 3.5,
+        "enrollment": 96.7
+      }
+    },
+    {
+      "cluster_id": 1,
+      "avg_learning_poverty": 38.2,
+      "features": {
+        "gdp": 23929.0,
+        "pupil_teacher": 18.0,
+        "stunting": 10.2,
+        "enrollment": 92.8
+      }
+    },
+    {
+      "cluster_id": 2,
+      "avg_learning_poverty": 81.7,
+      "features": {
+        "gdp": 5403.0,
+        "pupil_teacher": 36.6,
+        "stunting": 30.8,
+        "enrollment": 85.5
+      }
+    }
+  ],
+  "countries": [
+    {
+      "iso3": "ZMB",
+      "name": "Zambia",
+      "region": "SSF",
+      "income": "LMC",
+      "learning_poverty": 98.5,
+      "cluster": 2,
+      "priority_score": 100.0,
+      "features": {
+        "gdp": 3673.0,
+        "pupil_teacher_ratio": 42.1,
+        "stunting": 34.6,
+        "net_enrollment": 83.2
+      }
+    },
+    {
+      "iso3": "LAO",
+      "name": "Lao PDR",
+      "region": "EAS",
+      "income": "LMC",
+      "learning_poverty": 97.7,
+      "cluster": 2,
+      "priority_score": 99.3,
+      "features": {
+        "gdp": 8372.0,
+        "pupil_teacher_ratio": 22.3,
+        "stunting": 32.8,
+        "net_enrollment": 91.5
+      }
+    },
+    {
+      "iso3": "LSO",
+      "name": "Lesotho",
+      "region": "SSF",
+      "income": "LMC",
+      "learning_poverty": 96.9,
+      "cluster": 2,
+      "priority_score": 98.6,
+      "features": {
+        "gdp": 2596.0,
+        "pupil_teacher_ratio": 32.9,
+        "stunting": 34.6,
+        "net_enrollment": 93.3
+      }
+    },
+    {
+      "iso3": "COD",
+      "name": "Congo, Dem. Rep.",
+      "region": "SSF",
+      "income": "LIC",
+      "learning_poverty": 96.6,
+      "cluster": 2,
+      "priority_score": 98.4,
+      "features": {
+        "gdp": 1559.0,
+        "pupil_teacher_ratio": 33.2,
+        "stunting": 44.7,
+        "net_enrollment": 84.7
+      }
+    },
+    {
+      "iso3": "BDI",
+      "name": "Burundi",
+      "region": "SSF",
+      "income": "LIC",
+      "learning_poverty": 95.8,
+      "cluster": 2,
+      "priority_score": 97.7,
+      "features": {
+        "gdp": 1036.0,
+        "pupil_teacher_ratio": 42.5,
+        "stunting": 58.0,
+        "net_enrollment": 92.8
+      }
+    },
+    {
+      "iso3": "MDG",
+      "name": "Madagascar",
+      "region": "SSF",
+      "income": "LIC",
+      "learning_poverty": 95.2,
+      "cluster": 2,
+      "priority_score": 97.2,
+      "features": {
+        "gdp": 1629.0,
+        "pupil_teacher_ratio": 39.8,
+        "stunting": 39.8,
+        "net_enrollment": 95.6
+      }
+    },
+    {
+      "iso3": "TCD",
+      "name": "Chad",
+      "region": "SSF",
+      "income": "LIC",
+      "learning_poverty": 94.4,
+      "cluster": 2,
+      "priority_score": 96.5,
+      "features": {
+        "gdp": 2433.0,
+        "pupil_teacher_ratio": 56.9,
+        "stunting": 31.9,
+        "net_enrollment": 73.2
+      }
+    },
+    {
+      "iso3": "PHL",
+      "name": "Philippines",
+      "region": "EAS",
+      "income": "LMC",
+      "learning_poverty": 90.9,
+      "cluster": 2,
+      "priority_score": 93.5,
+      "features": {
+        "gdp": 9899.0,
+        "pupil_teacher_ratio": 29.1,
+        "stunting": 26.7,
+        "net_enrollment": 93.8
+      }
+    },
+    {
+      "iso3": "NER",
+      "name": "Niger",
+      "region": "SSF",
+      "income": "LIC",
+      "learning_poverty": 90.4,
+      "cluster": 2,
+      "priority_score": 93.1,
+      "features": {
+        "gdp": 1690.0,
+        "pupil_teacher_ratio": 36.3,
+        "stunting": 47.7,
+        "net_enrollment": 65.1
+      }
+    },
+    {
+      "iso3": "ETH",
+      "name": "Ethiopia",
+      "region": "SSF",
+      "income": "INX",
+      "learning_poverty": 90.4,
+      "cluster": 2,
+      "priority_score": 93.0,
+      "features": {
+        "gdp": 2758.0,
+        "pupil_teacher_ratio": 40.5,
+        "stunting": 36.8,
+        "net_enrollment": 84.6
+      }
+    },
+    {
+      "iso3": "KHM",
+      "name": "Cambodia",
+      "region": "EAS",
+      "income": "LMC",
+      "learning_poverty": 90.0,
+      "cluster": 2,
+      "priority_score": 92.7,
+      "features": {
+        "gdp": 6695.0,
+        "pupil_teacher_ratio": 41.7,
+        "stunting": 21.9,
+        "net_enrollment": 90.3
+      }
+    },
+    {
+      "iso3": "GIN",
+      "name": "Guinea",
+      "region": "SSF",
+      "income": "LMC",
+      "learning_poverty": 82.7,
+      "cluster": 2,
+      "priority_score": 86.4,
+      "features": {
+        "gdp": 3905.0,
+        "pupil_teacher_ratio": 47.1,
+        "stunting": 26.1,
+        "net_enrollment": 76.0
+      }
+    },
+    {
+      "iso3": "ZAF",
+      "name": "South Africa",
+      "region": "SSF",
+      "income": "UMC",
+      "learning_poverty": 82.0,
+      "cluster": 2,
+      "priority_score": 85.8,
+      "features": {
+        "gdp": 13695.0,
+        "pupil_teacher_ratio": 30.3,
+        "stunting": 21.3,
+        "net_enrollment": 87.0
+      }
+    },
+    {
+      "iso3": "TGO",
+      "name": "Togo",
+      "region": "SSF",
+      "income": "LIC",
+      "learning_poverty": 81.7,
+      "cluster": 2,
+      "priority_score": 85.5,
+      "features": {
+        "gdp": 2842.0,
+        "pupil_teacher_ratio": 40.1,
+        "stunting": 23.8,
+        "net_enrollment": 90.7
+      }
+    },
+    {
+      "iso3": "CIV",
+      "name": "Cote d'Ivoire",
+      "region": "SSF",
+      "income": "LMC",
+      "learning_poverty": 79.9,
+      "cluster": 2,
+      "priority_score": 84.0,
+      "features": {
+        "gdp": 6521.0,
+        "pupil_teacher_ratio": 41.8,
+        "stunting": 23.4,
+        "net_enrollment": 90.3
+      }
+    },
+    {
+      "iso3": "PAK",
+      "name": "Pakistan",
+      "region": "MEA",
+      "income": "LMC",
+      "learning_poverty": 79.5,
+      "cluster": 2,
+      "priority_score": 83.7,
+      "features": {
+        "gdp": 5419.0,
+        "pupil_teacher_ratio": 44.1,
+        "stunting": 37.6,
+        "net_enrollment": 67.6
+      }
+    },
+    {
+      "iso3": "MMR",
+      "name": "Myanmar",
+      "region": "EAS",
+      "income": "LMC",
+      "learning_poverty": 89.5,
+      "cluster": 1,
+      "priority_score": 83.6,
+      "features": {
+        "gdp": 5364.0,
+        "pupil_teacher_ratio": 24.4,
+        "stunting": 26.7,
+        "net_enrollment": 97.9
+      }
+    },
+    {
+      "iso3": "HND",
+      "name": "Honduras",
+      "region": "LCN",
+      "income": "LMC",
+      "learning_poverty": 79.3,
+      "cluster": 2,
+      "priority_score": 83.5,
+      "features": {
+        "gdp": 6468.0,
+        "pupil_teacher_ratio": 25.6,
+        "stunting": 18.7,
+        "net_enrollment": 80.1
+      }
+    },
+    {
+      "iso3": "KEN",
+      "name": "Kenya",
+      "region": "SSF",
+      "income": "LMC",
+      "learning_poverty": 79.3,
+      "cluster": 2,
+      "priority_score": 83.5,
+      "features": {
+        "gdp": 5692.0,
+        "pupil_teacher_ratio": 30.7,
+        "stunting": 17.6,
+        "net_enrollment": 83.7
+      }
+    },
+    {
+      "iso3": "NIC",
+      "name": "Nicaragua",
+      "region": "LCN",
+      "income": "LMC",
+      "learning_poverty": 78.9,
+      "cluster": 2,
+      "priority_score": 83.1,
+      "features": {
+        "gdp": 7497.0,
+        "pupil_teacher_ratio": 32.4,
+        "stunting": 24.2,
+        "net_enrollment": 89.9
+      }
+    },
+    {
+      "iso3": "GTM",
+      "name": "Guatemala",
+      "region": "LCN",
+      "income": "UMC",
+      "learning_poverty": 78.5,
+      "cluster": 2,
+      "priority_score": 82.8,
+      "features": {
+        "gdp": 12385.0,
+        "pupil_teacher_ratio": 20.3,
+        "stunting": 46.0,
+        "net_enrollment": 86.9
+      }
+    },
+    {
+      "iso3": "BFA",
+      "name": "Burkina Faso",
+      "region": "SSF",
+      "income": "LIC",
+      "learning_poverty": 73.9,
+      "cluster": 2,
+      "priority_score": 78.8,
+      "features": {
+        "gdp": 2486.0,
+        "pupil_teacher_ratio": 39.7,
+        "stunting": 21.1,
+        "net_enrollment": 78.6
+      }
+    },
+    {
+      "iso3": "CMR",
+      "name": "Cameroon",
+      "region": "SSF",
+      "income": "LMC",
+      "learning_poverty": 71.9,
+      "cluster": 2,
+      "priority_score": 77.1,
+      "features": {
+        "gdp": 4875.0,
+        "pupil_teacher_ratio": 44.8,
+        "stunting": 28.9,
+        "net_enrollment": 92.9
+      }
+    },
+    {
+      "iso3": "COG",
+      "name": "Congo, Rep.",
+      "region": "SSF",
+      "income": "LMC",
+      "learning_poverty": 70.0,
+      "cluster": 2,
+      "priority_score": 75.5,
+      "features": {
+        "gdp": 6172.0,
+        "pupil_teacher_ratio": 35.4,
+        "stunting": 22.4,
+        "net_enrollment": 85.2
+      }
+    },
+    {
+      "iso3": "PAN",
+      "name": "Panama",
+      "region": "LCN",
+      "income": "HIC",
+      "learning_poverty": 78.5,
+      "cluster": 1,
+      "priority_score": 74.2,
+      "features": {
+        "gdp": 35873.0,
+        "pupil_teacher_ratio": 22.0,
+        "stunting": 15.9,
+        "net_enrollment": 86.2
+      }
+    },
+    {
+      "iso3": "SEN",
+      "name": "Senegal",
+      "region": "SSF",
+      "income": "LMC",
+      "learning_poverty": 68.6,
+      "cluster": 2,
+      "priority_score": 74.2,
+      "features": {
+        "gdp": 4305.0,
+        "pupil_teacher_ratio": 36.3,
+        "stunting": 17.5,
+        "net_enrollment": 75.4
+      }
+    },
+    {
+      "iso3": "DOM",
+      "name": "Dominican Republic",
+      "region": "LCN",
+      "income": "UMC",
+      "learning_poverty": 77.7,
+      "cluster": 1,
+      "priority_score": 73.5,
+      "features": {
+        "gdp": 23282.0,
+        "pupil_teacher_ratio": 18.9,
+        "stunting": 6.7,
+        "net_enrollment": 92.7
+      }
+    },
+    {
+      "iso3": "PRY",
+      "name": "Paraguay",
+      "region": "LCN",
+      "income": "UMC",
+      "learning_poverty": 77.7,
+      "cluster": 1,
+      "priority_score": 73.5,
+      "features": {
+        "gdp": 15826.0,
+        "pupil_teacher_ratio": 21.4,
+        "stunting": 5.6,
+        "net_enrollment": 95.8
+      }
+    },
+    {
+      "iso3": "SLV",
+      "name": "El Salvador",
+      "region": "LCN",
+      "income": "UMC",
+      "learning_poverty": 69.1,
+      "cluster": 1,
+      "priority_score": 66.1,
+      "features": {
+        "gdp": 11425.0,
+        "pupil_teacher_ratio": 26.9,
+        "stunting": 10.0,
+        "net_enrollment": 81.0
+      }
+    },
+    {
+      "iso3": "IND",
+      "name": "India",
+      "region": "SAS",
+      "income": "LMC",
+      "learning_poverty": 56.1,
+      "cluster": 2,
+      "priority_score": 63.5,
+      "features": {
+        "gdp": 9302.0,
+        "pupil_teacher_ratio": 32.7,
+        "stunting": 35.5,
+        "net_enrollment": 86.5
+      }
+    },
+    {
+      "iso3": "ECU",
+      "name": "Ecuador",
+      "region": "LCN",
+      "income": "UMC",
+      "learning_poverty": 65.9,
+      "cluster": 1,
+      "priority_score": 63.4,
+      "features": {
+        "gdp": 14343.0,
+        "pupil_teacher_ratio": 24.3,
+        "stunting": 17.5,
+        "net_enrollment": 90.9
+      }
+    },
+    {
+      "iso3": "BEN",
+      "name": "Benin",
+      "region": "SSF",
+      "income": "LMC",
+      "learning_poverty": 55.8,
+      "cluster": 2,
+      "priority_score": 63.2,
+      "features": {
+        "gdp": 3721.0,
+        "pupil_teacher_ratio": 39.2,
+        "stunting": 34.1,
+        "net_enrollment": 97.2
+      }
+    },
+    {
+      "iso3": "JOR",
+      "name": "Jordan",
+      "region": "MEA",
+      "income": "LMC",
+      "learning_poverty": 62.2,
+      "cluster": 1,
+      "priority_score": 60.2,
+      "features": {
+        "gdp": 9381.0,
+        "pupil_teacher_ratio": 18.5,
+        "stunting": 8.2,
+        "net_enrollment": 80.9
+      }
+    },
+    {
+      "iso3": "BGD",
+      "name": "Bangladesh",
+      "region": "SAS",
+      "income": "LMC",
+      "learning_poverty": 51.2,
+      "cluster": 2,
+      "priority_score": 59.3,
+      "features": {
+        "gdp": 8242.0,
+        "pupil_teacher_ratio": 30.1,
+        "stunting": 23.6,
+        "net_enrollment": 91.7
+      }
+    },
+    {
+      "iso3": "MAR",
+      "name": "Morocco",
+      "region": "MEA",
+      "income": "LMC",
+      "learning_poverty": 59.8,
+      "cluster": 1,
+      "priority_score": 58.0,
+      "features": {
+        "gdp": 8915.0,
+        "pupil_teacher_ratio": 26.8,
+        "stunting": 14.2,
+        "net_enrollment": 99.1
+      }
+    },
+    {
+      "iso3": "ARG",
+      "name": "Argentina",
+      "region": "LCN",
+      "income": "UMC",
+      "learning_poverty": 59.1,
+      "cluster": 1,
+      "priority_score": 57.5,
+      "features": {
+        "gdp": 27230.0,
+        "pupil_teacher_ratio": 13.9,
+        "stunting": 8.7,
+        "net_enrollment": 99.2
+      }
+    },
+    {
+      "iso3": "EGY",
+      "name": "Egypt, Arab Rep.",
+      "region": "MEA",
+      "income": "LMC",
+      "learning_poverty": 56.1,
+      "cluster": 1,
+      "priority_score": 54.9,
+      "features": {
+        "gdp": 16691.0,
+        "pupil_teacher_ratio": 23.7,
+        "stunting": 12.8,
+        "net_enrollment": 97.0
+      }
+    },
+    {
+      "iso3": "IDN",
+      "name": "Indonesia",
+      "region": "EAS",
+      "income": "UMC",
+      "learning_poverty": 52.8,
+      "cluster": 1,
+      "priority_score": 52.1,
+      "features": {
+        "gdp": 13890.0,
+        "pupil_teacher_ratio": 17.0,
+        "stunting": 22.0,
+        "net_enrollment": 93.5
+      }
+    },
+    {
+      "iso3": "COL",
+      "name": "Colombia",
+      "region": "LCN",
+      "income": "UMC",
+      "learning_poverty": 51.4,
+      "cluster": 1,
+      "priority_score": 50.8,
+      "features": {
+        "gdp": 18383.0,
+        "pupil_teacher_ratio": 23.3,
+        "stunting": 12.7,
+        "net_enrollment": 92.9
+      }
+    },
+    {
+      "iso3": "KWT",
+      "name": "Kuwait",
+      "region": "MEA",
+      "income": "HIC",
+      "learning_poverty": 51.1,
+      "cluster": 1,
+      "priority_score": 50.6,
+      "features": {
+        "gdp": 47777.0,
+        "pupil_teacher_ratio": 8.9,
+        "stunting": 3.2,
+        "net_enrollment": 82.6
+      }
+    },
+    {
+      "iso3": "MEX",
+      "name": "Mexico",
+      "region": "LCN",
+      "income": "UMC",
+      "learning_poverty": 47.6,
+      "cluster": 1,
+      "priority_score": 47.6,
+      "features": {
+        "gdp": 21917.0,
+        "pupil_teacher_ratio": 26.6,
+        "stunting": 12.5,
+        "net_enrollment": 95.3
+      }
+    },
+    {
+      "iso3": "BRA",
+      "name": "Brazil",
+      "region": "LCN",
+      "income": "UMC",
+      "learning_poverty": 46.9,
+      "cluster": 1,
+      "priority_score": 47.0,
+      "features": {
+        "gdp": 19080.0,
+        "pupil_teacher_ratio": 20.2,
+        "stunting": 8.0,
+        "net_enrollment": 96.3
+      }
+    },
+    {
+      "iso3": "PER",
+      "name": "Peru",
+      "region": "LCN",
+      "income": "UMC",
+      "learning_poverty": 44.4,
+      "cluster": 1,
+      "priority_score": 44.9,
+      "features": {
+        "gdp": 15328.0,
+        "pupil_teacher_ratio": 17.4,
+        "stunting": 11.5,
+        "net_enrollment": 95.7
+      }
+    },
+    {
+      "iso3": "URY",
+      "name": "Uruguay",
+      "region": "LCN",
+      "income": "HIC",
+      "learning_poverty": 43.6,
+      "cluster": 1,
+      "priority_score": 44.1,
+      "features": {
+        "gdp": 31059.0,
+        "pupil_teacher_ratio": 11.0,
+        "stunting": 6.9,
+        "net_enrollment": 99.4
+      }
+    },
+    {
+      "iso3": "MYS",
+      "name": "Malaysia",
+      "region": "EAS",
+      "income": "UMC",
+      "learning_poverty": 42.0,
+      "cluster": 1,
+      "priority_score": 42.8,
+      "features": {
+        "gdp": 32858.0,
+        "pupil_teacher_ratio": 11.7,
+        "stunting": 21.2,
+        "net_enrollment": 99.6
+      }
+    },
+    {
+      "iso3": "IRN",
+      "name": "Iran, Islamic Rep.",
+      "region": "MEA",
+      "income": "UMC",
+      "learning_poverty": 41.5,
+      "cluster": 1,
+      "priority_score": 42.4,
+      "features": {
+        "gdp": 17045.0,
+        "pupil_teacher_ratio": 28.5,
+        "stunting": 4.8,
+        "net_enrollment": 99.7
+      }
+    },
+    {
+      "iso3": "OMN",
+      "name": "Oman",
+      "region": "MEA",
+      "income": "HIC",
+      "learning_poverty": 40.6,
+      "cluster": 1,
+      "priority_score": 41.6,
+      "features": {
+        "gdp": 37794.0,
+        "pupil_teacher_ratio": 9.7,
+        "stunting": 11.4,
+        "net_enrollment": 86.3
+      }
+    },
+    {
+      "iso3": "AZE",
+      "name": "Azerbaijan",
+      "region": "ECS",
+      "income": "UMC",
+      "learning_poverty": 37.5,
+      "cluster": 1,
+      "priority_score": 38.9,
+      "features": {
+        "gdp": 21311.0,
+        "pupil_teacher_ratio": 15.4,
+        "stunting": 6.6,
+        "net_enrollment": 92.4
+      }
+    },
+    {
+      "iso3": "CRI",
+      "name": "Costa Rica",
+      "region": "LCN",
+      "income": "HIC",
+      "learning_poverty": 34.0,
+      "cluster": 1,
+      "priority_score": 35.9,
+      "features": {
+        "gdp": 25980.0,
+        "pupil_teacher_ratio": 12.2,
+        "stunting": 9.0,
+        "net_enrollment": 97.3
+      }
+    },
+    {
+      "iso3": "MKD",
+      "name": "North Macedonia",
+      "region": "ECS",
+      "income": "UMC",
+      "learning_poverty": 33.0,
+      "cluster": 1,
+      "priority_score": 35.0,
+      "features": {
+        "gdp": 23455.0,
+        "pupil_teacher_ratio": 14.9,
+        "stunting": 4.3,
+        "net_enrollment": 94.9
+      }
+    },
+    {
+      "iso3": "UZB",
+      "name": "Uzbekistan",
+      "region": "ECS",
+      "income": "LMC",
+      "learning_poverty": 32.4,
+      "cluster": 1,
+      "priority_score": 34.5,
+      "features": {
+        "gdp": 10008.0,
+        "pupil_teacher_ratio": 21.5,
+        "stunting": 6.5,
+        "net_enrollment": 94.6
+      }
+    },
+    {
+      "iso3": "GAB",
+      "name": "Gabon",
+      "region": "SSF",
+      "income": "UMC",
+      "learning_poverty": 30.7,
+      "cluster": 1,
+      "priority_score": 33.0,
+      "features": {
+        "gdp": 18701.0,
+        "pupil_teacher_ratio": 21.0,
+        "stunting": 14.4,
+        "net_enrollment": 94.2
+      }
+    },
+    {
+      "iso3": "ARM",
+      "name": "Armenia",
+      "region": "ECS",
+      "income": "UMC",
+      "learning_poverty": 27.2,
+      "cluster": 1,
+      "priority_score": 30.1,
+      "features": {
+        "gdp": 19403.0,
+        "pupil_teacher_ratio": 15.4,
+        "stunting": 9.4,
+        "net_enrollment": 90.7
+      }
+    },
+    {
+      "iso3": "CHL",
+      "name": "Chile",
+      "region": "LCN",
+      "income": "HIC",
+      "learning_poverty": 27.2,
+      "cluster": 1,
+      "priority_score": 30.0,
+      "features": {
+        "gdp": 29564.0,
+        "pupil_teacher_ratio": 17.8,
+        "stunting": 9.7,
+        "net_enrollment": 94.7
+      }
+    },
+    {
+      "iso3": "SAU",
+      "name": "Saudi Arabia",
+      "region": "MEA",
+      "income": "HIC",
+      "learning_poverty": 32.4,
+      "cluster": 0,
+      "priority_score": 25.9,
+      "features": {
+        "gdp": 64482.0,
+        "pupil_teacher_ratio": 13.8,
+        "stunting": 10.8,
+        "net_enrollment": 94.5
+      }
+    },
+    {
+      "iso3": "SVK",
+      "name": "Slovak Republic",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 22.1,
+      "cluster": 1,
+      "priority_score": 25.6,
+      "features": {
+        "gdp": 39518.0,
+        "pupil_teacher_ratio": 15.5,
+        "stunting": 6.5,
+        "net_enrollment": 83.1
+      }
+    },
+    {
+      "iso3": "BHR",
+      "name": "Bahrain",
+      "region": "MEA",
+      "income": "HIC",
+      "learning_poverty": 30.2,
+      "cluster": 0,
+      "priority_score": 24.0,
+      "features": {
+        "gdp": 57820.0,
+        "pupil_teacher_ratio": 11.9,
+        "stunting": 2.4,
+        "net_enrollment": 96.7
+      }
+    },
+    {
+      "iso3": "TUR",
+      "name": "Turkiye",
+      "region": "ECS",
+      "income": "UMC",
+      "learning_poverty": 18.5,
+      "cluster": 1,
+      "priority_score": 22.5,
+      "features": {
+        "gdp": 35069.0,
+        "pupil_teacher_ratio": 17.0,
+        "stunting": 6.0,
+        "net_enrollment": 87.9
+      }
+    },
+    {
+      "iso3": "BGR",
+      "name": "Bulgaria",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 18.2,
+      "cluster": 1,
+      "priority_score": 22.3,
+      "features": {
+        "gdp": 33074.0,
+        "pupil_teacher_ratio": 15.2,
+        "stunting": 17.4,
+        "net_enrollment": 86.4
+      }
+    },
+    {
+      "iso3": "CHN",
+      "name": "China",
+      "region": "EAS",
+      "income": "UMC",
+      "learning_poverty": 18.2,
+      "cluster": 1,
+      "priority_score": 22.3,
+      "features": {
+        "gdp": 22687.0,
+        "pupil_teacher_ratio": 16.4,
+        "stunting": 4.8,
+        "net_enrollment": 95.6
+      }
+    },
+    {
+      "iso3": "VNM",
+      "name": "Viet Nam",
+      "region": "EAS",
+      "income": "LMC",
+      "learning_poverty": 18.1,
+      "cluster": 1,
+      "priority_score": 22.2,
+      "features": {
+        "gdp": 13546.0,
+        "pupil_teacher_ratio": 20.3,
+        "stunting": 18.2,
+        "net_enrollment": 90.5
+      }
+    },
+    {
+      "iso3": "ARE",
+      "name": "United Arab Emirates",
+      "region": "MEA",
+      "income": "HIC",
+      "learning_poverty": 25.9,
+      "cluster": 0,
+      "priority_score": 20.3,
+      "features": {
+        "gdp": 70240.0,
+        "pupil_teacher_ratio": 24.5,
+        "stunting": 4.5,
+        "net_enrollment": 95.0
+      }
+    },
+    {
+      "iso3": "MNE",
+      "name": "Montenegro",
+      "region": "ECS",
+      "income": "UMC",
+      "learning_poverty": 15.8,
+      "cluster": 1,
+      "priority_score": 20.2,
+      "features": {
+        "gdp": 27244.0,
+        "pupil_teacher_ratio": 13.9,
+        "stunting": 7.2,
+        "net_enrollment": 96.5
+      }
+    },
+    {
+      "iso3": "LKA",
+      "name": "Sri Lanka",
+      "region": "SAS",
+      "income": "LMC",
+      "learning_poverty": 14.8,
+      "cluster": 1,
+      "priority_score": 19.3,
+      "features": {
+        "gdp": 13025.0,
+        "pupil_teacher_ratio": 21.7,
+        "stunting": 10.3,
+        "net_enrollment": 99.1
+      }
+    },
+    {
+      "iso3": "GEO",
+      "name": "Georgia",
+      "region": "ECS",
+      "income": "UMC",
+      "learning_poverty": 13.5,
+      "cluster": 1,
+      "priority_score": 18.2,
+      "features": {
+        "gdp": 22591.0,
+        "pupil_teacher_ratio": 9.0,
+        "stunting": 5.8,
+        "net_enrollment": 96.4
+      }
+    },
+    {
+      "iso3": "QAT",
+      "name": "Qatar",
+      "region": "MEA",
+      "income": "HIC",
+      "learning_poverty": 21.1,
+      "cluster": 0,
+      "priority_score": 16.1,
+      "features": {
+        "gdp": 116564.0,
+        "pupil_teacher_ratio": 12.2,
+        "stunting": 6.2,
+        "net_enrollment": 94.1
+      }
+    },
+    {
+      "iso3": "KAZ",
+      "name": "Kazakhstan",
+      "region": "ECS",
+      "income": "UMC",
+      "learning_poverty": 10.4,
+      "cluster": 1,
+      "priority_score": 15.6,
+      "features": {
+        "gdp": 34703.0,
+        "pupil_teacher_ratio": 17.2,
+        "stunting": 8.0,
+        "net_enrollment": 86.9
+      }
+    },
+    {
+      "iso3": "ALB",
+      "name": "Albania",
+      "region": "ECS",
+      "income": "UMC",
+      "learning_poverty": 10.2,
+      "cluster": 1,
+      "priority_score": 15.4,
+      "features": {
+        "gdp": 20481.0,
+        "pupil_teacher_ratio": 17.6,
+        "stunting": 11.3,
+        "net_enrollment": 94.5
+      }
+    },
+    {
+      "iso3": "HUN",
+      "name": "Hungary",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 9.2,
+      "cluster": 1,
+      "priority_score": 14.5,
+      "features": {
+        "gdp": 40333.0,
+        "pupil_teacher_ratio": 10.8,
+        "stunting": 5.5,
+        "net_enrollment": 90.8
+      }
+    },
+    {
+      "iso3": "SRB",
+      "name": "Serbia",
+      "region": "ECS",
+      "income": "UMC",
+      "learning_poverty": 8.8,
+      "cluster": 1,
+      "priority_score": 14.2,
+      "features": {
+        "gdp": 25735.0,
+        "pupil_teacher_ratio": 14.3,
+        "stunting": 5.4,
+        "net_enrollment": 94.6
+      }
+    },
+    {
+      "iso3": "DEU",
+      "name": "Germany",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 15.4,
+      "cluster": 0,
+      "priority_score": 11.3,
+      "features": {
+        "gdp": 63039.0,
+        "pupil_teacher_ratio": 12.3,
+        "stunting": 1.3,
+        "net_enrollment": 90.1
+      }
+    },
+    {
+      "iso3": "AUT",
+      "name": "Austria",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 15.0,
+      "cluster": 0,
+      "priority_score": 10.9,
+      "features": {
+        "gdp": 64536.0,
+        "pupil_teacher_ratio": 10.0,
+        "stunting": 10.0,
+        "net_enrollment": 88.6
+      }
+    },
+    {
+      "iso3": "ISR",
+      "name": "Israel",
+      "region": "MEA",
+      "income": "HIC",
+      "learning_poverty": 14.4,
+      "cluster": 0,
+      "priority_score": 10.4,
+      "features": {
+        "gdp": 47527.0,
+        "pupil_teacher_ratio": 12.1,
+        "stunting": 2.7,
+        "net_enrollment": 97.0
+      }
+    },
+    {
+      "iso3": "CZE",
+      "name": "Czechia",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 14.2,
+      "cluster": 0,
+      "priority_score": 10.2,
+      "features": {
+        "gdp": 47558.0,
+        "pupil_teacher_ratio": 12.0,
+        "stunting": 2.8,
+        "net_enrollment": 89.4
+      }
+    },
+    {
+      "iso3": "HRV",
+      "name": "Croatia",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 3.9,
+      "cluster": 1,
+      "priority_score": 10.0,
+      "features": {
+        "gdp": 41320.0,
+        "pupil_teacher_ratio": 13.5,
+        "stunting": 3.3,
+        "net_enrollment": 88.0
+      }
+    },
+    {
+      "iso3": "RUS",
+      "name": "Russian Federation",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 3.8,
+      "cluster": 1,
+      "priority_score": 9.8,
+      "features": {
+        "gdp": 39887.0,
+        "pupil_teacher_ratio": 21.3,
+        "stunting": 6.1,
+        "net_enrollment": 95.1
+      }
+    },
+    {
+      "iso3": "NZL",
+      "name": "New Zealand",
+      "region": "EAS",
+      "income": "HIC",
+      "learning_poverty": 10.9,
+      "cluster": 0,
+      "priority_score": 7.3,
+      "features": {
+        "gdp": 49508.0,
+        "pupil_teacher_ratio": 14.9,
+        "stunting": 2.0,
+        "net_enrollment": 99.1
+      }
+    },
+    {
+      "iso3": "CYP",
+      "name": "Cyprus",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 10.2,
+      "cluster": 0,
+      "priority_score": 6.8,
+      "features": {
+        "gdp": 51454.0,
+        "pupil_teacher_ratio": 12.0,
+        "stunting": 1.9,
+        "net_enrollment": 97.5
+      }
+    },
+    {
+      "iso3": "MLT",
+      "name": "Malta",
+      "region": "MEA",
+      "income": "HIC",
+      "learning_poverty": 10.2,
+      "cluster": 0,
+      "priority_score": 6.7,
+      "features": {
+        "gdp": 60418.0,
+        "pupil_teacher_ratio": 12.9,
+        "stunting": 3.3,
+        "net_enrollment": 99.5
+      }
+    },
+    {
+      "iso3": "USA",
+      "name": "United States",
+      "region": "NAC",
+      "income": "HIC",
+      "learning_poverty": 9.7,
+      "cluster": 0,
+      "priority_score": 6.3,
+      "features": {
+        "gdp": 74159.0,
+        "pupil_teacher_ratio": 14.2,
+        "stunting": 3.8,
+        "net_enrollment": 94.6
+      }
+    },
+    {
+      "iso3": "AUS",
+      "name": "Australia",
+      "region": "EAS",
+      "income": "HIC",
+      "learning_poverty": 9.1,
+      "cluster": 0,
+      "priority_score": 5.8,
+      "features": {
+        "gdp": 60685.0,
+        "pupil_teacher_ratio": 12.6,
+        "stunting": 3.4,
+        "net_enrollment": 96.4
+      }
+    },
+    {
+      "iso3": "BEL",
+      "name": "Belgium",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 8.5,
+      "cluster": 0,
+      "priority_score": 5.3,
+      "features": {
+        "gdp": 63095.0,
+        "pupil_teacher_ratio": 11.3,
+        "stunting": 1.9,
+        "net_enrollment": 98.8
+      }
+    },
+    {
+      "iso3": "LVA",
+      "name": "Latvia",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 8.4,
+      "cluster": 0,
+      "priority_score": 5.3,
+      "features": {
+        "gdp": 37278.0,
+        "pupil_teacher_ratio": 11.5,
+        "stunting": 0.5,
+        "net_enrollment": 96.3
+      }
+    },
+    {
+      "iso3": "PRT",
+      "name": "Portugal",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 8.0,
+      "cluster": 0,
+      "priority_score": 4.9,
+      "features": {
+        "gdp": 41768.0,
+        "pupil_teacher_ratio": 12.4,
+        "stunting": 3.2,
+        "net_enrollment": 97.6
+      }
+    },
+    {
+      "iso3": "ESP",
+      "name": "Spain",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 7.3,
+      "cluster": 0,
+      "priority_score": 4.3,
+      "features": {
+        "gdp": 47323.0,
+        "pupil_teacher_ratio": 13.1,
+        "stunting": 2.5,
+        "net_enrollment": 97.3
+      }
+    },
+    {
+      "iso3": "MAC",
+      "name": "Macao SAR, China",
+      "region": "EAS",
+      "income": "HIC",
+      "learning_poverty": 7.2,
+      "cluster": 0,
+      "priority_score": 4.2,
+      "features": {
+        "gdp": 104815.0,
+        "pupil_teacher_ratio": 13.5,
+        "stunting": 5.2,
+        "net_enrollment": 96.4
+      }
+    },
+    {
+      "iso3": "SVN",
+      "name": "Slovenia",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 7.2,
+      "cluster": 0,
+      "priority_score": 4.2,
+      "features": {
+        "gdp": 47977.0,
+        "pupil_teacher_ratio": 13.8,
+        "stunting": 2.8,
+        "net_enrollment": 98.3
+      }
+    },
+    {
+      "iso3": "FRA",
+      "name": "France",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 6.6,
+      "cluster": 0,
+      "priority_score": 3.7,
+      "features": {
+        "gdp": 54297.0,
+        "pupil_teacher_ratio": 15.1,
+        "stunting": 1.4,
+        "net_enrollment": 98.9
+      }
+    },
+    {
+      "iso3": "POL",
+      "name": "Poland",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 5.6,
+      "cluster": 0,
+      "priority_score": 2.8,
+      "features": {
+        "gdp": 43673.0,
+        "pupil_teacher_ratio": 10.2,
+        "stunting": 1.0,
+        "net_enrollment": 95.8
+      }
+    },
+    {
+      "iso3": "ITA",
+      "name": "Italy",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 5.5,
+      "cluster": 0,
+      "priority_score": 2.7,
+      "features": {
+        "gdp": 52870.0,
+        "pupil_teacher_ratio": 11.5,
+        "stunting": 1.9,
+        "net_enrollment": 95.7
+      }
+    },
+    {
+      "iso3": "HKG",
+      "name": "Hong Kong SAR, China",
+      "region": "EAS",
+      "income": "HIC",
+      "learning_poverty": 5.4,
+      "cluster": 0,
+      "priority_score": 2.6,
+      "features": {
+        "gdp": 64435.0,
+        "pupil_teacher_ratio": 13.3,
+        "stunting": 10.1,
+        "net_enrollment": 95.5
+      }
+    },
+    {
+      "iso3": "SWE",
+      "name": "Sweden",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 5.3,
+      "cluster": 0,
+      "priority_score": 2.5,
+      "features": {
+        "gdp": 62663.0,
+        "pupil_teacher_ratio": 12.2,
+        "stunting": 2.6,
+        "net_enrollment": 99.2
+      }
+    },
+    {
+      "iso3": "DNK",
+      "name": "Denmark",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 5.1,
+      "cluster": 0,
+      "priority_score": 2.4,
+      "features": {
+        "gdp": 69379.0,
+        "pupil_teacher_ratio": 17.0,
+        "stunting": 4.6,
+        "net_enrollment": 98.5
+      }
+    },
+    {
+      "iso3": "FIN",
+      "name": "Finland",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 4.8,
+      "cluster": 0,
+      "priority_score": 2.1,
+      "features": {
+        "gdp": 56251.0,
+        "pupil_teacher_ratio": 13.7,
+        "stunting": 2.8,
+        "net_enrollment": 98.6
+      }
+    },
+    {
+      "iso3": "NLD",
+      "name": "Netherlands",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 4.5,
+      "cluster": 0,
+      "priority_score": 1.9,
+      "features": {
+        "gdp": 70199.0,
+        "pupil_teacher_ratio": 11.8,
+        "stunting": 4.5,
+        "net_enrollment": 98.6
+      }
+    },
+    {
+      "iso3": "CAN",
+      "name": "Canada",
+      "region": "NAC",
+      "income": "HIC",
+      "learning_poverty": 4.3,
+      "cluster": 0,
+      "priority_score": 1.7,
+      "features": {
+        "gdp": 57517.0,
+        "pupil_teacher_ratio": 12.5,
+        "stunting": 2.4,
+        "net_enrollment": 99.9
+      }
+    },
+    {
+      "iso3": "NOR",
+      "name": "Norway",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 4.3,
+      "cluster": 0,
+      "priority_score": 1.7,
+      "features": {
+        "gdp": 90085.0,
+        "pupil_teacher_ratio": 8.6,
+        "stunting": 4.8,
+        "net_enrollment": 99.9
+      }
+    },
+    {
+      "iso3": "JPN",
+      "name": "Japan",
+      "region": "EAS",
+      "income": "HIC",
+      "learning_poverty": 3.6,
+      "cluster": 0,
+      "priority_score": 1.1,
+      "features": {
+        "gdp": 45859.0,
+        "pupil_teacher_ratio": 15.7,
+        "stunting": 1.4,
+        "net_enrollment": 95.6
+      }
+    },
+    {
+      "iso3": "GBR",
+      "name": "United Kingdom",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 3.4,
+      "cluster": 0,
+      "priority_score": 0.9,
+      "features": {
+        "gdp": 52593.0,
+        "pupil_teacher_ratio": 15.1,
+        "stunting": 2.0,
+        "net_enrollment": 99.5
+      }
+    },
+    {
+      "iso3": "SGP",
+      "name": "Singapore",
+      "region": "EAS",
+      "income": "HIC",
+      "learning_poverty": 3.4,
+      "cluster": 0,
+      "priority_score": 0.9,
+      "features": {
+        "gdp": 129555.0,
+        "pupil_teacher_ratio": 14.7,
+        "stunting": 5.4,
+        "net_enrollment": 99.7
+      }
+    },
+    {
+      "iso3": "KOR",
+      "name": "Korea, Rep.",
+      "region": "EAS",
+      "income": "HIC",
+      "learning_poverty": 3.2,
+      "cluster": 0,
+      "priority_score": 0.8,
+      "features": {
+        "gdp": 54029.0,
+        "pupil_teacher_ratio": 16.3,
+        "stunting": 0.9,
+        "net_enrollment": 97.3
+      }
+    },
+    {
+      "iso3": "LTU",
+      "name": "Lithuania",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 3.3,
+      "cluster": 0,
+      "priority_score": 0.8,
+      "features": {
+        "gdp": 46160.0,
+        "pupil_teacher_ratio": 13.5,
+        "stunting": 1.0,
+        "net_enrollment": 98.2
+      }
+    },
+    {
+      "iso3": "IRL",
+      "name": "Ireland",
+      "region": "ECS",
+      "income": "HIC",
+      "learning_poverty": 2.3,
+      "cluster": 0,
+      "priority_score": 0.0,
+      "features": {
+        "gdp": 117862.0,
+        "pupil_teacher_ratio": 12.4,
+        "stunting": 6.0,
+        "net_enrollment": 95.8
+      }
+    }
+  ]
+}

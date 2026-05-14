@@ -1,0 +1,629 @@
+{
+    "schema": "https://ihsn.org/schemas/timeseries/1.0.0",
+    "schema_version": "1.0.0",
+    "type": "timeseries",
+    "idno": "5fc8233b-409d-45ab-8fb2-3355fff9e249",
+    "changed": "1770262663",
+    "changed_utc": "2026-02-04T22:37:43-05:00",
+    "created": "1714568324",
+    "created_utc": "2024-05-01T08:58:44-04:00",
+    "created_by": "51",
+    "changed_by": "6",
+    "metadata_information": {
+        "idno": "META_WB_LPGD_SE_LPV_POP_PRIM",
+        "producers": [
+            {
+                "name": "Development Economics Data Group",
+                "abbr": "DECDG",
+                "affiliation": "World Bank"
+            }
+        ],
+        "prod_date": "2024-05-14",
+        "version_statement": {
+            "version_notes": "Updated title formatting for consistency.",
+            "version_date": "2025-03-17",
+            "version": "1.1"
+        },
+        "title": "Metadata for Population age primary for reference year 2019"
+    },
+    "series_description": {
+        "name": "Population Age primary for Reference Year 2019",
+        "idno": "WB_LPGD_SE_LPV_POP_PRIM",
+        "database_id": "WB_LPGD",
+        "languages": [
+            {
+                "name": "English",
+                "code": "EN"
+            }
+        ],
+        "definition_long": "Population Age primary for Reference Year 2019",
+        "definition_references": [
+            {
+                "source": "World Bank",
+                "uri": "https://www.worldbank.org/en/topic/education/brief/learning-poverty-measure"
+            }
+        ],
+        "authoring_entity": [
+            {
+                "name": "World Bank"
+            }
+        ],
+        "measurement_unit": "Count",
+        "dimensions": [
+            {
+                "label": "Year",
+                "description": "Total, Male, Female"
+            },
+            {
+                "label": "Sex",
+                "description": "Total, Male, Female"
+            },
+            {
+                "label": "Geographic area",
+                "description": "Country/economy, Region"
+            },
+            {
+                "label": "Age"
+            }
+        ],
+        "methodology": "World Bank staff estimates using the World Bank's total population and age sex distributions of the United Nations Population Division's as of June, 2022.",
+        "time_periods": [
+            {
+                "start": "2001",
+                "end": "2023"
+            }
+        ],
+        "links": [
+            {
+                "type": "DDH",
+                "uri": "https://datacatalog.worldbank.org/int/search/dataset/0038947"
+            }
+        ],
+        "periodicity": "Annual",
+        "version_statement": {
+            "version_date": "2025-02-13"
+        },
+        "definition_short": "Population Age primary for Reference Year 2019",
+        "ref_country": [
+            {
+                "code": "AFG",
+                "name": "Afghanistan"
+            },
+            {
+                "code": "ALB",
+                "name": "Albania"
+            },
+            {
+                "code": "ARE",
+                "name": "United Arab Emirates"
+            },
+            {
+                "code": "ARG",
+                "name": "Argentina"
+            },
+            {
+                "code": "ARM",
+                "name": "Armenia"
+            },
+            {
+                "code": "AUS",
+                "name": "Australia"
+            },
+            {
+                "code": "AUT",
+                "name": "Austria"
+            },
+            {
+                "code": "AZE",
+                "name": "Azerbaijan"
+            },
+            {
+                "code": "BEL",
+                "name": "Belgium"
+            },
+            {
+                "code": "BEN",
+                "name": "Benin"
+            },
+            {
+                "code": "BFA",
+                "name": "Burkina Faso"
+            },
+            {
+                "code": "BGD",
+                "name": "Bangladesh"
+            },
+            {
+                "code": "BGR",
+                "name": "Bulgaria"
+            },
+            {
+                "code": "BHR",
+                "name": "Bahrain"
+            },
+            {
+                "code": "BLZ",
+                "name": "Belize"
+            },
+            {
+                "code": "BRA",
+                "name": "Brazil"
+            },
+            {
+                "code": "CAN",
+                "name": "Canada"
+            },
+            {
+                "code": "CHL",
+                "name": "Chile"
+            },
+            {
+                "code": "CHN",
+                "name": "China"
+            },
+            {
+                "code": "CIV",
+                "name": "C\u00f4te d\u2019Ivoire"
+            },
+            {
+                "code": "CMR",
+                "name": "Cameroon"
+            },
+            {
+                "code": "COD",
+                "name": "Congo, Dem. Rep."
+            },
+            {
+                "code": "COG",
+                "name": "Congo, Rep."
+            },
+            {
+                "code": "COL",
+                "name": "Colombia"
+            },
+            {
+                "code": "COM",
+                "name": "Comoros"
+            },
+            {
+                "code": "CRI",
+                "name": "Costa Rica"
+            },
+            {
+                "code": "CYP",
+                "name": "Cyprus"
+            },
+            {
+                "code": "CZE",
+                "name": "Czechia"
+            },
+            {
+                "code": "DEU",
+                "name": "Germany"
+            },
+            {
+                "code": "DNK",
+                "name": "Denmark"
+            },
+            {
+                "code": "DOM",
+                "name": "Dominican Republic"
+            },
+            {
+                "code": "DZA",
+                "name": "Algeria"
+            },
+            {
+                "code": "ECU",
+                "name": "Ecuador"
+            },
+            {
+                "code": "EGY",
+                "name": "Egypt, Arab Rep."
+            },
+            {
+                "code": "ESP",
+                "name": "Spain"
+            },
+            {
+                "code": "ETH",
+                "name": "Ethiopia"
+            },
+            {
+                "code": "FIN",
+                "name": "Finland"
+            },
+            {
+                "code": "FRA",
+                "name": "France"
+            },
+            {
+                "code": "GAB",
+                "name": "Gabon"
+            },
+            {
+                "code": "GBR",
+                "name": "United Kingdom"
+            },
+            {
+                "code": "GEO",
+                "name": "Georgia"
+            },
+            {
+                "code": "GIN",
+                "name": "Guinea"
+            },
+            {
+                "code": "GRC",
+                "name": "Greece"
+            },
+            {
+                "code": "GTM",
+                "name": "Guatemala"
+            },
+            {
+                "code": "HKG",
+                "name": "Hong Kong SAR, China"
+            },
+            {
+                "code": "HND",
+                "name": "Honduras"
+            },
+            {
+                "code": "HRV",
+                "name": "Croatia"
+            },
+            {
+                "code": "HUN",
+                "name": "Hungary"
+            },
+            {
+                "code": "IDN",
+                "name": "Indonesia"
+            },
+            {
+                "code": "IND",
+                "name": "India"
+            },
+            {
+                "code": "IRL",
+                "name": "Ireland"
+            },
+            {
+                "code": "IRN",
+                "name": "Iran, Islamic Rep."
+            },
+            {
+                "code": "ISL",
+                "name": "Iceland"
+            },
+            {
+                "code": "ISR",
+                "name": "Israel"
+            },
+            {
+                "code": "ITA",
+                "name": "Italy"
+            },
+            {
+                "code": "JOR",
+                "name": "Jordan"
+            },
+            {
+                "code": "JPN",
+                "name": "Japan"
+            },
+            {
+                "code": "KAZ",
+                "name": "Kazakhstan"
+            },
+            {
+                "code": "KEN",
+                "name": "Kenya"
+            },
+            {
+                "code": "KGZ",
+                "name": "Kyrgyz Republic"
+            },
+            {
+                "code": "KOR",
+                "name": "Korea, Rep."
+            },
+            {
+                "code": "KWT",
+                "name": "Kuwait"
+            },
+            {
+                "code": "LAO",
+                "name": "Lao PDR"
+            },
+            {
+                "code": "LKA",
+                "name": "Sri Lanka"
+            },
+            {
+                "code": "LSO",
+                "name": "Lesotho"
+            },
+            {
+                "code": "LTU",
+                "name": "Lithuania"
+            },
+            {
+                "code": "LUX",
+                "name": "Luxembourg"
+            },
+            {
+                "code": "LVA",
+                "name": "Latvia"
+            },
+            {
+                "code": "MAC",
+                "name": "Macao SAR, China"
+            },
+            {
+                "code": "MAR",
+                "name": "Morocco"
+            },
+            {
+                "code": "MDA",
+                "name": "Moldova"
+            },
+            {
+                "code": "MDG",
+                "name": "Madagascar"
+            },
+            {
+                "code": "MEX",
+                "name": "Mexico"
+            },
+            {
+                "code": "MKD",
+                "name": "North Macedonia"
+            },
+            {
+                "code": "MLI",
+                "name": "Mali"
+            },
+            {
+                "code": "MLT",
+                "name": "Malta"
+            },
+            {
+                "code": "MMR",
+                "name": "Myanmar"
+            },
+            {
+                "code": "MNE",
+                "name": "Montenegro"
+            },
+            {
+                "code": "MNG",
+                "name": "Mongolia"
+            },
+            {
+                "code": "MRT",
+                "name": "Mauritania"
+            },
+            {
+                "code": "MUS",
+                "name": "Mauritius"
+            },
+            {
+                "code": "MYS",
+                "name": "Malaysia"
+            },
+            {
+                "code": "NIC",
+                "name": "Nicaragua"
+            },
+            {
+                "code": "NLD",
+                "name": "Netherlands"
+            },
+            {
+                "code": "NOR",
+                "name": "Norway"
+            },
+            {
+                "code": "NZL",
+                "name": "New Zealand"
+            },
+            {
+                "code": "OMN",
+                "name": "Oman"
+            },
+            {
+                "code": "PAK",
+                "name": "Pakistan"
+            },
+            {
+                "code": "PAN",
+                "name": "Panama"
+            },
+            {
+                "code": "PER",
+                "name": "Peru"
+            },
+            {
+                "code": "PHL",
+                "name": "Philippines"
+            },
+            {
+                "code": "POL",
+                "name": "Poland"
+            },
+            {
+                "code": "PRT",
+                "name": "Portugal"
+            },
+            {
+                "code": "PRY",
+                "name": "Paraguay"
+            },
+            {
+                "code": "QAT",
+                "name": "Qatar"
+            },
+            {
+                "code": "ROU",
+                "name": "Romania"
+            },
+            {
+                "code": "RUS",
+                "name": "Russian Federation"
+            },
+            {
+                "code": "SAU",
+                "name": "Saudi Arabia"
+            },
+            {
+                "code": "SEN",
+                "name": "Senegal"
+            },
+            {
+                "code": "SGP",
+                "name": "Singapore"
+            },
+            {
+                "code": "SLV",
+                "name": "El Salvador"
+            },
+            {
+                "code": "SRB",
+                "name": "Serbia"
+            },
+            {
+                "code": "SVK",
+                "name": "Slovak Republic"
+            },
+            {
+                "code": "SVN",
+                "name": "Slovenia"
+            },
+            {
+                "code": "SWE",
+                "name": "Sweden"
+            },
+            {
+                "code": "TCD",
+                "name": "Chad"
+            },
+            {
+                "code": "TGO",
+                "name": "Togo"
+            },
+            {
+                "code": "THA",
+                "name": "Thailand"
+            },
+            {
+                "code": "TTO",
+                "name": "Trinidad and Tobago"
+            },
+            {
+                "code": "TUN",
+                "name": "Tunisia"
+            },
+            {
+                "code": "TUR",
+                "name": "T\u00fcrkiye"
+            },
+            {
+                "code": "UGA",
+                "name": "Uganda"
+            },
+            {
+                "code": "UKR",
+                "name": "Ukraine"
+            },
+            {
+                "code": "URY",
+                "name": "Uruguay"
+            },
+            {
+                "code": "USA",
+                "name": "United States"
+            },
+            {
+                "code": "UZB",
+                "name": "Uzbekistan"
+            },
+            {
+                "code": "VNM",
+                "name": "Vietnam"
+            },
+            {
+                "code": "YEM",
+                "name": "Yemen, Rep."
+            },
+            {
+                "code": "ZAF",
+                "name": "South Africa"
+            },
+            {
+                "name": "Zambia",
+                "code": "ZMB"
+            }
+        ],
+        "sources": [
+            {
+                "name": "Learning Poverty Global Database",
+                "organization": "World Bank (WB)",
+                "uri": "https://prosperitydata360.worldbank.org/en/dataset/WB+LPGD"
+            },
+            {
+                "organization": "UN Educational, Scientific and Cultural Organization (UNESCO)",
+                "uri": "https://uis.unesco.org/"
+            }
+        ],
+        "title": "Population age primary for reference year 2019",
+        "license": [
+            {
+                "name": "CC BY 4.0",
+                "uri": "https://creativecommons.org/licenses/by/4.0/",
+                "note": "This work is provided under a Creative Commons 4.0 Attribution International License, with the following mandatory and binding addition:i. Any and all disputes arising under this License that cannot be settled amicably shall be submitted to mediation in accordance with the WIPO Mediation Rules in effect at the time the work was published. If the request for mediation is not resolved within forty-five (45) days of the request, either You or the Licensor may, pursuant to a notice of arbitration communicated by reasonable means to the other party refer the dispute to final and binding arbitration to be conducted in accordance with UNCITRAL Arbitration Rules as then in force. The arbitral tribunal shall consist of a sole arbitrator and the language of the proceedings shall be English unless otherwise agreed. The place of arbitration shall be where the Licensor has its headquarters. The arbitral proceedings shall be conducted remotely (e.g., via telephone conference or written submissions) whenever practicable, or held at the World Bank headquarters in Washington DC."
+            }
+        ],
+        "confidentiality_status": "PU",
+        "database_name": "Learning Poverty Global Database"
+    },
+    "tags": [
+        {
+            "tag": "WB_LPGD",
+            "tag_group": "feature-dataset-profile"
+        }
+    ],
+    "additional": {
+        "visualization": {
+            "chart_type": [
+                {
+                    "chart_types": "pie"
+                },
+                {
+                    "chart_types": "stackedBar"
+                }
+            ]
+        }
+    },
+    "admin_metadata": {
+        "data360": {
+            "tags": [
+                {
+                    "tag": "WB_LPGD",
+                    "tag_group": "feature-dataset-profile"
+                }
+            ],
+            "visualization": {
+                "remove_chart": [
+                    {
+                        "chart_types": "stackedBar"
+                    },
+                    {
+                        "chart_types": "pie"
+                    }
+                ]
+            }
+        }
+    }
+}

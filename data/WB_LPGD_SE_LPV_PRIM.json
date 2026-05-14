@@ -1,0 +1,662 @@
+{
+    "schema": "https://ihsn.org/schemas/timeseries/1.0.0",
+    "schema_version": "1.0.0",
+    "type": "timeseries",
+    "idno": "7a8e35cb-39a8-4f64-8ba9-6e1195040dd7",
+    "changed": "1770261953",
+    "changed_utc": "2026-02-04T22:25:53-05:00",
+    "created": "1714568317",
+    "created_utc": "2024-05-01T08:58:37-04:00",
+    "created_by": "51",
+    "changed_by": "6",
+    "metadata_information": {
+        "idno": "META_WB_LPGD_SE_LPV_PRIM",
+        "producers": [
+            {
+                "name": "Development Economics Data Group",
+                "abbr": "DECDG",
+                "affiliation": "World Bank"
+            }
+        ],
+        "prod_date": "2024-05-14",
+        "version_statement": {
+            "version_notes": "Updated title formatting for consistency.",
+            "version_date": "2025-03-17",
+            "version": "1.1"
+        },
+        "title": "Metadata for Learning poverty: Share of children at the end-of-primary age below minimum reading proficiency adjusted by out-of-school children (%)"
+    },
+    "series_description": {
+        "name": "Learning poverty: Share of Children at the End-of-Primary age below minimum reading proficiency adjusted by Out-of-School Children (%)",
+        "idno": "WB_LPGD_SE_LPV_PRIM",
+        "alternate_identifiers": [
+            {
+                "identifier": "WB_WDI_SE_LPV_PRIM",
+                "name": "Primary",
+                "database": "WB_WDI"
+            }
+        ],
+        "database_id": "WB_LPGD",
+        "languages": [
+            {
+                "name": "English",
+                "code": "EN"
+            }
+        ],
+        "definition_long": "The share of 10-year-olds who cannot read and understand a short passage of age-appropriate material\u2014in other words, those who are below the minimum proficiency threshold for reading. This measure is defined as the union of two deprivations: 1) schooling deprivation and 2) learning deprivation. A child is considered schooling-deprived (SD) if he or she is of primary school age and out-of-school. The dimension of learning deprivation (LD) applies only for children in school, and identifies those pupils who are below the minimum proficiency level (MPL) for reading, as defined by the Global Alliance to Monitor Learning (GAML), measured in standard learning assessments, and reported in the context of the SDG 4.1.1b monitoring. This union approach to measurement reflects the choice that, as presented in the SDGs, all age 10 children must be both in school and learning. The final learning poverty measure combines the two dimensions in a single indicator using the following formula: LP = SD + [(1-SD) x LD]",
+        "definition_references": [
+            {
+                "source": "World Bank",
+                "uri": "https://www.worldbank.org/en/topic/education/brief/what-is-learning-poverty"
+            }
+        ],
+        "relevance": "Ensuring that all students read with comprehension is essential to achieving the ambitious SDG targets and to building human capital. Children need to learn to read so that they can read to learn. Those who do not become proficient in reading by the end of primary school often cannot catch up later, because the curriculum of every school system assumes that secondary-school students can learn through reading. Reading is a gateway to all types of academic learning.  In high-income countries, 90% of all children learn to read with comprehension before the end of primary school, and for the highest-performing countries, the figure reaches 97% or more. Yet past evidence from many low- and middle-income countries has shown that many children are not learning to read with comprehension in primary school. \nThe LP indicator illustrates progress toward SDG 4\u2019s broader goal of ensuring inclusive and equitable quality education for all. It particularly highlights progress towards SDG 4.1.1(b) and SDG 4.1.4, which specifies that all children attend primary school and reach at least a minimum proficiency level in reading at the end of primary. The indicator is also aligned with the World Bank\u2019s Human Capital Project, which aims to ensure that children reach their full potential in school and in life. The ability to read with comprehension is a foundational skill that every education system around the world strives to impart by late in primary school\u2014generally by age 10. Moreover, attaining the ambitious Sustainable Development Goals (SDGs) in education requires first to achieving this basic building block, and so does improving countries\u2019 Human Capital Index scores.",
+        "authoring_entity": [
+            {
+                "name": "World Bank"
+            }
+        ],
+        "measurement_unit": "Percentage",
+        "dimensions": [
+            {
+                "label": "Year",
+                "description": "Total, Male, Female"
+            },
+            {
+                "label": "Sex",
+                "description": "Total, Male, Female"
+            },
+            {
+                "label": "Geographic area",
+                "description": "Country/economy, Region"
+            }
+        ],
+        "limitation": "The construct of all children reading by age 10 is an ideal that embodies normative statements about both learning and access. To achieve it, not only should all children be reading proficiently after 3 full years in primary education, but they should also have entered school at age 6 or 7. \nBy contrast, the actual indicators used to measure learning poverty are based on grade rather than age. Since the assessments are of 4th- through 6th-graders, the children tested will have had at least 3 to 5 years in school to reach what, according to the ideal, should 10 be an age-10 minimum proficiency, or even the entire primary-school-age segment for the out-of-school indicator.\nDue to different assessment availability within and between countries, data comparability, both within countries over time and across countries still poses a significant challenge. The additional out of school component further limits comparability.\nThe learning poverty indicator is based on data covering four-fifths of children at the end of primary school. In other words, a little more than 80 percent of children in low- and middle-income countries live in a country with at least one learning assessment at the end of primary, carried out in the past 9 years. For regional and global aggregates, weighted imputations affect regions with less data coverage. The major gaps are concentrated in countries where the learning crisis is most acute. Less than half of children in Sub-Saharan Africa live in a country with a National Large-Scale Learning Assessment (NLSA) or a international of regional large-scale learning assessment (ILSA or RLSA) of adequate quality to be used for this purpose.\nThis extensive coverage became possible only in recent years, with the progress in measuring learning in countries and the GAML\u2019s efforts to establish comparability, which has made possible the construction of a global indicator based on harmonized proficiency levels. Future efforts by coalition organizations are also ensuring more flexible assessment options are available for expanding data availability for countries, such as the Assessment of Minimum Proficiency Levels (AMPL) and policy linking exercises led by UIS.",
+        "methodology": "The learning poverty indicator brings together schooling and learning indicators. It starts with the share of children in school who haven\u2019t achieved minimum reading proficiency (Learning Deprived) and adjusts it by the proportion of children who are out of school (Schooling Deprived). \nFormally, Learning Poverty is calculated as: [LD* (1-SD)] + [1 * SD]\nwhere LP = Learning poverty; LD = Learning deprivation or the share of children at the end of primary who read at below the minimum proficiency level, as defined by the Global Alliance to Monitor Learning (GAML) in the context of the SDG 4.1.1 monitoring; SD = Schooling deprivation or the share of primary-school-age children who are out-of-school (OOS) and in which all OOS are regarded as being below the minimum proficiency level.\nBecause out-of-school children are treated as non-proficient in reading, learning poverty will always be higher than the share of children in school who haven't achieved minimum reading proficiency. For countries with a very low schooling deprivation, the learning deprivation value will be very close to Learning Poverty. \nEstimating the current level of global and regional learning poverty requires deciding how to define current. We include results of assessments within four years before or after a set anchor year. This decision is driven by data availability. International and regional large-scale learning assessments used for SDG 4.1.1b reporting are carried out only every 3 to 4 years. And even where assessments have been carried out recently, there is a lag of a couple of years before the data are available. This band is intended as a moving window. In the original 2019 release, the anchor year used was 2015 (Assessments between 2011 and 2019 are included in the learning poverty estimate). In the 2022 Global Update, the anchor year was moved to 2019 (assessments between 2015 and 2023 are included).\nAggregations for each region comprise the average learning poverty of countries with available data, weighted by their population ages 10\u201314 years old. To obtain a global estimate, we weight the regional aggregations by the 10\u201314-year-old population regardless of data availability. This is equivalent to imputing missing country data using regional values.",
+        "aggregation_method": "Weighted average",
+        "time_periods": [
+            {
+                "start": "2001",
+                "end": "2023"
+            }
+        ],
+        "links": [
+            {
+                "type": "DDH",
+                "uri": "https://datacatalog.worldbank.org/int/search/dataset/0038947"
+            }
+        ],
+        "periodicity": "Annual",
+        "version_statement": {
+            "version_date": "2025-02-13"
+        },
+        "definition_short": "Learning poverty: Share of Children at the End-of-Primary age below minimum reading proficiency adjusted by Out-of-School Children (%)",
+        "ref_country": [
+            {
+                "code": "AFG",
+                "name": "Afghanistan"
+            },
+            {
+                "code": "ALB",
+                "name": "Albania"
+            },
+            {
+                "code": "ARE",
+                "name": "United Arab Emirates"
+            },
+            {
+                "code": "ARG",
+                "name": "Argentina"
+            },
+            {
+                "code": "ARM",
+                "name": "Armenia"
+            },
+            {
+                "code": "AUS",
+                "name": "Australia"
+            },
+            {
+                "code": "AUT",
+                "name": "Austria"
+            },
+            {
+                "code": "AZE",
+                "name": "Azerbaijan"
+            },
+            {
+                "code": "BDI",
+                "name": "Burundi"
+            },
+            {
+                "code": "BEL",
+                "name": "Belgium"
+            },
+            {
+                "code": "BEN",
+                "name": "Benin"
+            },
+            {
+                "code": "BFA",
+                "name": "Burkina Faso"
+            },
+            {
+                "code": "BGD",
+                "name": "Bangladesh"
+            },
+            {
+                "code": "BGR",
+                "name": "Bulgaria"
+            },
+            {
+                "code": "BHR",
+                "name": "Bahrain"
+            },
+            {
+                "code": "BLZ",
+                "name": "Belize"
+            },
+            {
+                "code": "BRA",
+                "name": "Brazil"
+            },
+            {
+                "code": "BWA",
+                "name": "Botswana"
+            },
+            {
+                "code": "CAN",
+                "name": "Canada"
+            },
+            {
+                "code": "CHL",
+                "name": "Chile"
+            },
+            {
+                "code": "CHN",
+                "name": "China"
+            },
+            {
+                "code": "CIV",
+                "name": "C\u00f4te d\u2019Ivoire"
+            },
+            {
+                "code": "CMR",
+                "name": "Cameroon"
+            },
+            {
+                "code": "COD",
+                "name": "Congo, Dem. Rep."
+            },
+            {
+                "code": "COG",
+                "name": "Congo, Rep."
+            },
+            {
+                "code": "COL",
+                "name": "Colombia"
+            },
+            {
+                "code": "COM",
+                "name": "Comoros"
+            },
+            {
+                "code": "CRI",
+                "name": "Costa Rica"
+            },
+            {
+                "code": "CYP",
+                "name": "Cyprus"
+            },
+            {
+                "code": "CZE",
+                "name": "Czechia"
+            },
+            {
+                "code": "DEU",
+                "name": "Germany"
+            },
+            {
+                "code": "DNK",
+                "name": "Denmark"
+            },
+            {
+                "code": "DOM",
+                "name": "Dominican Republic"
+            },
+            {
+                "code": "DZA",
+                "name": "Algeria"
+            },
+            {
+                "code": "ECU",
+                "name": "Ecuador"
+            },
+            {
+                "code": "EGY",
+                "name": "Egypt, Arab Rep."
+            },
+            {
+                "code": "ESP",
+                "name": "Spain"
+            },
+            {
+                "code": "ETH",
+                "name": "Ethiopia"
+            },
+            {
+                "code": "FIN",
+                "name": "Finland"
+            },
+            {
+                "code": "FRA",
+                "name": "France"
+            },
+            {
+                "code": "GAB",
+                "name": "Gabon"
+            },
+            {
+                "code": "GBR",
+                "name": "United Kingdom"
+            },
+            {
+                "code": "GEO",
+                "name": "Georgia"
+            },
+            {
+                "code": "GIN",
+                "name": "Guinea"
+            },
+            {
+                "code": "GRC",
+                "name": "Greece"
+            },
+            {
+                "code": "GTM",
+                "name": "Guatemala"
+            },
+            {
+                "code": "HKG",
+                "name": "Hong Kong SAR, China"
+            },
+            {
+                "code": "HND",
+                "name": "Honduras"
+            },
+            {
+                "code": "HRV",
+                "name": "Croatia"
+            },
+            {
+                "code": "HUN",
+                "name": "Hungary"
+            },
+            {
+                "code": "IDN",
+                "name": "Indonesia"
+            },
+            {
+                "code": "IND",
+                "name": "India"
+            },
+            {
+                "code": "IRL",
+                "name": "Ireland"
+            },
+            {
+                "code": "IRN",
+                "name": "Iran, Islamic Rep."
+            },
+            {
+                "code": "ISL",
+                "name": "Iceland"
+            },
+            {
+                "code": "ISR",
+                "name": "Israel"
+            },
+            {
+                "code": "ITA",
+                "name": "Italy"
+            },
+            {
+                "code": "JOR",
+                "name": "Jordan"
+            },
+            {
+                "code": "JPN",
+                "name": "Japan"
+            },
+            {
+                "code": "KAZ",
+                "name": "Kazakhstan"
+            },
+            {
+                "code": "KEN",
+                "name": "Kenya"
+            },
+            {
+                "code": "KGZ",
+                "name": "Kyrgyz Republic"
+            },
+            {
+                "code": "KHM",
+                "name": "Cambodia"
+            },
+            {
+                "code": "KOR",
+                "name": "Korea, Rep."
+            },
+            {
+                "code": "KWT",
+                "name": "Kuwait"
+            },
+            {
+                "code": "LAO",
+                "name": "Lao PDR"
+            },
+            {
+                "code": "LKA",
+                "name": "Sri Lanka"
+            },
+            {
+                "code": "LSO",
+                "name": "Lesotho"
+            },
+            {
+                "code": "LTU",
+                "name": "Lithuania"
+            },
+            {
+                "code": "LUX",
+                "name": "Luxembourg"
+            },
+            {
+                "code": "LVA",
+                "name": "Latvia"
+            },
+            {
+                "code": "MAC",
+                "name": "Macao SAR, China"
+            },
+            {
+                "code": "MAR",
+                "name": "Morocco"
+            },
+            {
+                "code": "MDA",
+                "name": "Moldova"
+            },
+            {
+                "code": "MDG",
+                "name": "Madagascar"
+            },
+            {
+                "code": "MEX",
+                "name": "Mexico"
+            },
+            {
+                "code": "MKD",
+                "name": "North Macedonia"
+            },
+            {
+                "code": "MLI",
+                "name": "Mali"
+            },
+            {
+                "code": "MLT",
+                "name": "Malta"
+            },
+            {
+                "code": "MMR",
+                "name": "Myanmar"
+            },
+            {
+                "code": "MNE",
+                "name": "Montenegro"
+            },
+            {
+                "code": "MNG",
+                "name": "Mongolia"
+            },
+            {
+                "code": "MRT",
+                "name": "Mauritania"
+            },
+            {
+                "code": "MUS",
+                "name": "Mauritius"
+            },
+            {
+                "code": "MYS",
+                "name": "Malaysia"
+            },
+            {
+                "code": "NER",
+                "name": "Niger"
+            },
+            {
+                "code": "NIC",
+                "name": "Nicaragua"
+            },
+            {
+                "code": "NLD",
+                "name": "Netherlands"
+            },
+            {
+                "code": "NOR",
+                "name": "Norway"
+            },
+            {
+                "code": "NZL",
+                "name": "New Zealand"
+            },
+            {
+                "code": "OMN",
+                "name": "Oman"
+            },
+            {
+                "code": "PAK",
+                "name": "Pakistan"
+            },
+            {
+                "code": "PAN",
+                "name": "Panama"
+            },
+            {
+                "code": "PER",
+                "name": "Peru"
+            },
+            {
+                "code": "PHL",
+                "name": "Philippines"
+            },
+            {
+                "code": "POL",
+                "name": "Poland"
+            },
+            {
+                "code": "PRT",
+                "name": "Portugal"
+            },
+            {
+                "code": "PRY",
+                "name": "Paraguay"
+            },
+            {
+                "code": "QAT",
+                "name": "Qatar"
+            },
+            {
+                "code": "ROU",
+                "name": "Romania"
+            },
+            {
+                "code": "RUS",
+                "name": "Russian Federation"
+            },
+            {
+                "code": "SAU",
+                "name": "Saudi Arabia"
+            },
+            {
+                "code": "SEN",
+                "name": "Senegal"
+            },
+            {
+                "code": "SGP",
+                "name": "Singapore"
+            },
+            {
+                "code": "SLV",
+                "name": "El Salvador"
+            },
+            {
+                "code": "SRB",
+                "name": "Serbia"
+            },
+            {
+                "code": "SVK",
+                "name": "Slovak Republic"
+            },
+            {
+                "code": "SVN",
+                "name": "Slovenia"
+            },
+            {
+                "code": "SWE",
+                "name": "Sweden"
+            },
+            {
+                "code": "TCD",
+                "name": "Chad"
+            },
+            {
+                "code": "TGO",
+                "name": "Togo"
+            },
+            {
+                "code": "THA",
+                "name": "Thailand"
+            },
+            {
+                "code": "TTO",
+                "name": "Trinidad and Tobago"
+            },
+            {
+                "code": "TUN",
+                "name": "Tunisia"
+            },
+            {
+                "code": "TUR",
+                "name": "T\u00fcrkiye"
+            },
+            {
+                "code": "UGA",
+                "name": "Uganda"
+            },
+            {
+                "code": "UKR",
+                "name": "Ukraine"
+            },
+            {
+                "code": "URY",
+                "name": "Uruguay"
+            },
+            {
+                "code": "USA",
+                "name": "United States"
+            },
+            {
+                "code": "UZB",
+                "name": "Uzbekistan"
+            },
+            {
+                "code": "VNM",
+                "name": "Vietnam"
+            },
+            {
+                "code": "XKX",
+                "name": "Kosovo"
+            },
+            {
+                "name": "Yemen, Rep.",
+                "code": "YEM"
+            },
+            {
+                "name": "South Africa",
+                "code": "ZAF"
+            },
+            {
+                "name": "Zambia",
+                "code": "ZMB"
+            }
+        ],
+        "sources": [
+            {
+                "name": "Learning Poverty Global Database",
+                "organization": "World Bank (WB)",
+                "uri": "https://prosperitydata360.worldbank.org/en/dataset/WB+LPGD"
+            },
+            {
+                "organization": "UN Educational, Scientific and Cultural Organization (UNESCO)",
+                "uri": "https://uis.unesco.org/"
+            }
+        ],
+        "title": "Learning poverty: Share of children at the end-of-primary age below minimum reading proficiency adjusted by out-of-school children (%)",
+        "license": [
+            {
+                "name": "CC BY 4.0",
+                "uri": "https://creativecommons.org/licenses/by/4.0/",
+                "note": "This work is provided under a Creative Commons 4.0 Attribution International License, with the following mandatory and binding addition:i. Any and all disputes arising under this License that cannot be settled amicably shall be submitted to mediation in accordance with the WIPO Mediation Rules in effect at the time the work was published. If the request for mediation is not resolved within forty-five (45) days of the request, either You or the Licensor may, pursuant to a notice of arbitration communicated by reasonable means to the other party refer the dispute to final and binding arbitration to be conducted in accordance with UNCITRAL Arbitration Rules as then in force. The arbitral tribunal shall consist of a sole arbitrator and the language of the proceedings shall be English unless otherwise agreed. The place of arbitration shall be where the Licensor has its headquarters. The arbitral proceedings shall be conducted remotely (e.g., via telephone conference or written submissions) whenever practicable, or held at the World Bank headquarters in Washington DC."
+            }
+        ],
+        "confidentiality_status": "PU",
+        "database_name": "Learning Poverty Global Database"
+    },
+    "tags": [
+        {
+            "tag": "WB_LPGD",
+            "tag_group": "feature-dataset-profile"
+        }
+    ],
+    "additional": {
+        "visualization": {
+            "chart_type": [
+                {
+                    "chart_types": "pie"
+                },
+                {
+                    "chart_types": "stackedBar"
+                }
+            ]
+        },
+        "metadata_link": [
+            {
+                "type": "primary",
+                "metadata_id": "META_WB_WDI_SE_LPV_PRIM"
+            }
+        ]
+    },
+    "admin_metadata": {
+        "data360": {
+            "tags": [
+                {
+                    "tag": "WB_LPGD",
+                    "tag_group": "feature-dataset-profile"
+                }
+            ],
+            "visualization": {
+                "remove_chart": [
+                    {
+                        "chart_types": "stackedBar"
+                    },
+                    {
+                        "chart_types": "pie"
+                    }
+                ]
+            }
+        }
+    }
+}
