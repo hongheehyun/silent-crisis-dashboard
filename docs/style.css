@@ -9,9 +9,9 @@
 
   --accent:      #4f8ef7;
   --accent-2:    #7c5cbf;
-  --success:     #27ae60;
-  --danger:      #e74c3c;
-  --warning:     #f39c12;
+  --success:     #38bdf8; /* 안전권 파란색 */
+  --danger:      #fb7185; /* 위기 빨간색 */
+  --warning:     #fde047; /* 중간 노란색 */
   --neutral:     #7f8c8d;
 
   --text-1:  #f0f4ff;
@@ -23,13 +23,6 @@
   --radius-sm: 10px;
   --shadow: 0 8px 32px rgba(0,0,0,0.4);
   --shadow-sm: 0 4px 16px rgba(0,0,0,0.3);
-
-  /* LP 색상 척도 */
-  --lp-0:  #1a9641;
-  --lp-25: #a6d96a;
-  --lp-50: #ffffbf;
-  --lp-75: #fd8d3c;
-  --lp-100:#d73027;
 }
 
 /* ── 리셋 & 기본 ── */
@@ -41,6 +34,8 @@ body {
   color: var(--text-1);
   line-height: 1.6;
   overflow-x: hidden;
+  user-select: none; /* 텍스트 커서 방지 (드래그 불가) */
+  -webkit-user-select: none;
 }
 a { color: inherit; text-decoration: none; }
 
@@ -188,9 +183,15 @@ a { color: inherit; text-decoration: none; }
 .legend-label { font-size: 0.78rem; color: var(--text-3); }
 .legend-gradient {
   width: 200px; height: 12px; border-radius: 6px;
-  background: linear-gradient(to right, #1a9641, #a6d96a, #ffffbf, #fd8d3c, #d73027);
+  background: linear-gradient(to right, var(--success), var(--warning), var(--danger));
 }
-.legend-unit { font-size: 0.75rem; color: var(--text-3); }
+.map-no-data-legend {
+  display: flex; align-items: center; gap: 8px; justify-content: center;
+  margin-top: 10px; font-size: 0.75rem; color: var(--text-3);
+}
+.no-data-color {
+  width: 14px; height: 14px; border-radius: 4px; background: #2d3748;
+}
 
 /* 국가 사이드 패널 */
 .country-panel {
@@ -219,13 +220,6 @@ a { color: inherit; text-decoration: none; }
 }
 .panel-stat-label { color: var(--text-2); }
 .panel-stat-val { font-weight: 600; }
-.panel-deviance {
-  margin-top: 14px; padding: 10px 14px; border-radius: 10px;
-  font-size: 0.82rem; font-weight: 600; text-align: center;
-}
-.dev-positive { background: rgba(39,174,96,0.2); color: #27ae60; }
-.dev-negative { background: rgba(231,76,60,0.2); color: #e74c3c; }
-.dev-middle   { background: rgba(79,142,247,0.1); color: var(--accent); }
 
 /* ── 핵심 요인 섹션 ── */
 .gdp-insight-bar {
@@ -290,15 +284,6 @@ a { color: inherit; text-decoration: none; }
 .top5-info { flex: 1; }
 .top5-country { font-size: 0.88rem; font-weight: 700; }
 .top5-detail  { font-size: 0.75rem; color: var(--text-2); }
-.top5-residual {
-  font-size: 0.9rem; font-weight: 700; color: var(--success);
-  white-space: nowrap;
-}
-
-/* Cohen's d 차트 */
-.sig-dot  { color: var(--danger); }
-.tend-dot { color: var(--warning); }
-.ns-dot   { color: var(--neutral); }
 
 /* 분위별 히트맵 */
 #quartile-heatmap {
@@ -332,7 +317,7 @@ a { color: inherit; text-decoration: none; }
 .a2-section { background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%); }
 .a2-kpi-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-bottom: 36px; }
 .a2-kpi { padding: 24px; text-align: center; }
-.a2-kpi-val { font-size: 2rem; font-weight: 800; margin-bottom: 6px; }
+.a2-kpi-val { font-size: 1.2rem; font-weight: 800; margin-bottom: 6px; }
 .a2-kpi-label { font-size: 0.82rem; font-weight: 600; color: var(--text-2); margin-bottom: 4px; }
 .a2-kpi-note  { font-size: 0.75rem; color: var(--text-3); }
 .a2-kpi.bad  .a2-kpi-val { color: var(--neutral); }
@@ -396,7 +381,6 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.72rem; padding: 4px 10px; border-radius: 20px;
   background: var(--glass); border: 1px solid var(--glass-border); color: var(--text-2);
 }
-.footer-method { font-size: 0.78rem; color: var(--text-2); line-height: 1.7; margin-bottom: 10px; }
 .footer-note   { font-size: 0.75rem; color: var(--text-3); }
 
 /* ── 스크롤 reveal 애니메이션 ── */
