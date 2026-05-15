@@ -3,21 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="글로벌 Learning Poverty 심층 분석 대시보드">
-  <title>The Silent Crisis v2.0 | 교육 위기 극복을 위한 데이터 인사이트</title>
-
-  <!-- Google Fonts -->
+  <meta name="description" content="글로벌 Learning Poverty 심층 분석 대시보드 — 105개국 데이터 기반">
+  <title>The Silent Crisis v2.0 | 글로벌 Learning Poverty 분석</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- D3.js + TopoJSON -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://d3js.org/topojson.v3.min.js"></script>
-
-  <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -46,17 +39,28 @@
       <div class="hero-label">DATA-DRIVEN EDUCATION POLICY · WORLD BANK 2023</div>
       <h1 class="hero-title">The Silent Crisis</h1>
       <p class="hero-subtitle">
-        전 세계 아동 3명 중 1명은 10세가 되도록<br>
-        간단한 이야기를 읽고 이해하지 못합니다.
+        학교에 다니지만, 읽지 못하는 아이들.<br>
+        소리 없이 퍼지는 이 교육 위기를 데이터로 파헤칩니다.
       </p>
+
+      <!-- 제목 설명 카드 -->
+      <div class="definition-card glass-card" style="margin-bottom: 20px;">
+        <div class="def-icon">🔇</div>
+        <div class="def-text">
+          <strong>'The Silent Crisis'란?</strong><br>
+          세계은행(World Bank)이 전 세계 교육 위기를 부르는 이름입니다. 전쟁이나 재난처럼 눈에 띄지 않지만,
+          수억 명의 아이들이 <em>학교에 다니면서도 기초 읽기·쓰기 능력을 얻지 못하고</em> 있습니다.
+          그 조용한 비극을 세계은행은 "소리 없는 위기(Silent Crisis)"라 명명했습니다.
+        </div>
+      </div>
 
       <!-- LP 정의 카드 -->
       <div class="definition-card glass-card">
         <div class="def-icon">📖</div>
         <div class="def-text">
-          <strong>학습 위기(Learning Poverty)란?</strong><br>
-          10세 아동이 간단한 글을 읽고 이해하지 못하는 비율을 뜻합니다.
-          단순히 학교에 다니는지를 넘어, <em>실제로 기초적인 학습을 하고 있는지</em>를 보여주는 가장 중요한 교육 지표입니다.
+          <strong>Learning Poverty(학습 빈곤)란?</strong><br>
+          10세가 되도록 간단한 글을 읽고 이해하지 못하는 아동의 비율입니다.
+          단순히 학교에 다니는지를 넘어, <em>실제로 기초적인 학습이 이루어지고 있는지</em>를 보여주는 핵심 지표입니다.
         </div>
       </div>
 
@@ -65,20 +69,20 @@
         <div class="kpi-card glass-card" id="kpi-avg">
           <div class="kpi-icon danger">📉</div>
           <div class="kpi-value counter" data-target="39.7" data-suffix="%">0%</div>
-          <div class="kpi-label">전 세계 평균 학습 위기율</div>
+          <div class="kpi-label">전 세계 평균 Learning Poverty율</div>
           <div class="kpi-sub">105개국 분석 기준</div>
         </div>
-        <div class="kpi-card glass-card" id="kpi-max">
-          <div class="kpi-icon danger">🚨</div>
-          <div class="kpi-value counter" data-target="98.5" data-suffix="%">0%</div>
-          <div class="kpi-label">가장 심각한 국가의 비율</div>
-          <div class="kpi-sub" id="kpi-max-country">—</div>
+        <div class="kpi-card glass-card" id="kpi-children">
+          <div class="kpi-icon danger">👧</div>
+          <div class="kpi-value counter" data-target="3.9" data-suffix="억 명">0억 명</div>
+          <div class="kpi-label">전 세계 Learning Poverty 아동 수</div>
+          <div class="kpi-sub">기초 문해력 미달 아동 추산 (World Bank)</div>
         </div>
         <div class="kpi-card glass-card" id="kpi-n">
           <div class="kpi-icon primary">🌍</div>
           <div class="kpi-value counter" data-target="105" data-suffix="개국">0개국</div>
           <div class="kpi-label">분석 대상 국가</div>
-          <div class="kpi-sub">데이터 기반 심층 분석</div>
+          <div class="kpi-sub">World Bank 데이터 기반 심층 분석</div>
         </div>
       </div>
 
@@ -94,16 +98,16 @@
     <div class="container">
       <div class="section-header">
         <div class="section-tag">SECTION 01</div>
-        <h2 class="section-title">글로벌 학습 지도</h2>
-        <p class="section-desc">국가를 클릭하면 해당 국가의 상세 교육 환경 데이터를 확인할 수 있습니다.</p>
+        <h2 class="section-title">전 세계 Learning Poverty 지도</h2>
+        <p class="section-desc">국가를 클릭하면 해당 국가의 주요 교육·보건·경제 데이터를 확인할 수 있습니다.</p>
       </div>
       <div class="map-wrapper glass-card">
         <div id="map-container"></div>
         <div id="map-tooltip" class="map-tooltip hidden"></div>
         <div class="map-legend">
-          <span class="legend-label">안전 (0%)</span>
+          <span class="legend-label">0% (안전)</span>
           <div class="legend-gradient"></div>
-          <span class="legend-label">위기 (100%)</span>
+          <span class="legend-label">100% (위기)</span>
         </div>
         <div class="map-no-data-legend">
           <span class="no-data-color"></span> 데이터 없음
@@ -111,7 +115,7 @@
       </div>
     </div>
     <!-- 사이드 패널 -->
-    <div class="country-panel glass-card hidden" id="country-panel">
+    <div class="country-panel hidden" id="country-panel">
       <button class="panel-close" id="panel-close">✕</button>
       <div class="panel-flag" id="panel-flag">🌍</div>
       <h3 class="panel-country" id="panel-country">—</h3>
@@ -125,24 +129,64 @@
     <div class="container">
       <div class="section-header">
         <div class="section-tag">SECTION 02</div>
-        <h2 class="section-title">무엇이 아이들의 학습을 가로막을까요?</h2>
+        <h2 class="section-title">무엇이 아이들의 Learning Poverty를 만들까요?</h2>
         <p class="section-desc">
-          국가의 경제력(GDP)이 교육에 가장 큰 영향을 미치는 것은 사실입니다. 하지만 경제력이 비슷해도 완전히 다른 결과를 내는 국가들이 있습니다. 우리는 가난해도 교육에 성공할 수 있는 <b>진짜 이유</b>를 데이터로 찾았습니다.
+          GDP가 높을수록 교육 성과가 좋다는 건 사실입니다. 하지만 비슷한 GDP를 가진 나라들 사이에서도 결과는 크게 달라집니다.
+          우리는 데이터로 <b>진짜 원인</b>을 찾았습니다.
         </p>
       </div>
 
       <div class="two-col">
+        <!-- 왼쪽: 단순 상관관계 -->
         <div class="glass-card chart-block">
           <div class="chart-tag old">단순 비교</div>
-          <h3 class="chart-title">단순히 수치만 비교했을 때</h3>
-          <p class="chart-note">어떤 요인이 교육 성과와 가장 비슷하게 움직이는지 보여줍니다.<br>(막대가 길수록 관련성이 높음)</p>
+          <h3 class="chart-title">17개 요인을 수집해 상관관계를 분석했습니다</h3>
+          <p class="chart-note">
+            경제·보건·교육·인프라·거버넌스 분야 <strong>총 17개 요인</strong>과 Learning Poverty의 관계를 분석했습니다.
+            아래 그래프는 그 중 <strong>상위 5개 요인</strong>입니다. (막대가 길수록 Learning Poverty와 더 밀접하게 움직임)
+          </p>
           <div class="chart-wrap"><canvas id="factorsV1Chart"></canvas></div>
+          <button class="toggle-btn" id="toggle-full-list" onclick="toggleFactorList()">▼ 17개 요인 전체 순위 보기</button>
+          <div class="factors-full-list" id="factors-full-list">
+            <table class="factors-full-table">
+              <thead><tr><th>순위</th><th>요인</th><th>상관계수</th><th>방향</th></tr></thead>
+              <tbody>
+                <tr class="rank-1-5"><td>1</td><td>유아 사망률</td><td>0.878</td><td>↑ 높을수록 위기</td></tr>
+                <tr class="rank-1-5"><td>2</td><td>GDP (1인당 소득)</td><td>-0.845</td><td>↓ 높을수록 안전</td></tr>
+                <tr class="rank-1-5"><td>3</td><td>아동 발육부진율</td><td>0.845</td><td>↑ 높을수록 위기</td></tr>
+                <tr class="rank-1-5"><td>4</td><td>10대 출산율</td><td>0.837</td><td>↑ 높을수록 위기</td></tr>
+                <tr class="rank-1-5"><td>5</td><td>여성 조혼율</td><td>0.810</td><td>↑ 높을수록 위기</td></tr>
+                <tr><td>6</td><td>정부 효율성 (거버넌스)</td><td>-0.798</td><td>↓ 높을수록 안전</td></tr>
+                <tr><td>7</td><td>전기 보급률</td><td>-0.793</td><td>↓ 높을수록 안전</td></tr>
+                <tr><td>8</td><td>평균 거버넌스 지수</td><td>-0.791</td><td>↓ 높을수록 안전</td></tr>
+                <tr><td>9</td><td>법치 수준</td><td>-0.784</td><td>↓ 높을수록 안전</td></tr>
+                <tr><td>10</td><td>의사 수 (1000명당)</td><td>-0.765</td><td>↓ 높을수록 안전</td></tr>
+                <tr><td>11</td><td>부패 통제 지수</td><td>-0.760</td><td>↓ 높을수록 안전</td></tr>
+                <tr><td>12</td><td>교사 1인당 학생 수</td><td>0.751</td><td>↑ 높을수록 위기</td></tr>
+                <tr><td>13</td><td>인터넷 사용률</td><td>-0.726</td><td>↓ 높을수록 안전</td></tr>
+                <tr><td>14</td><td>초등학교 수료율</td><td>-0.583</td><td>↓ 높을수록 안전</td></tr>
+                <tr><td>15</td><td>초등학교 순등록률</td><td>-0.568</td><td>↓ 높을수록 안전</td></tr>
+                <tr><td>16</td><td>교육 성비 지수</td><td>-0.369</td><td>↓ 높을수록 안전</td></tr>
+                <tr><td>17</td><td>교육지출 (%GDP)</td><td>-0.331</td><td>최하위 ⚠</td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+
+        <!-- 오른쪽: GDP 제거 후 진짜 요인 -->
         <div class="glass-card chart-block">
           <div class="chart-tag new">진짜 중요도</div>
-          <h3 class="chart-title">경제력을 빼고 본 진짜 핵심 요인</h3>
-          <p class="chart-note">돈(경제력)의 영향을 제외했을 때, <b>실제로 가장 필요한 요인</b>입니다.<br>(막대가 길수록 영향력이 큼)</p>
+          <h3 class="chart-title">GDP 영향을 제거하고 찾아낸 진짜 원인</h3>
+          <p class="chart-note">
+            단순 비교에서는 "부자 나라가 유아 사망률도 낮고 교육도 좋다"는 당연한 결과만 나옵니다.
+            진짜 알고 싶은 건 <strong>"같은 GDP 수준의 나라들 사이에서 왜 차이가 나는가?"</strong>입니다.
+            이를 위해 GDP 효과를 수학적으로 제거(잔차 분석)한 뒤, 실제로 차이를 만드는 독립적인 요인을 추려냈습니다.
+          </p>
           <div class="chart-wrap"><canvas id="factorsV2Chart"></canvas></div>
+          <div class="color-legend-row">
+            <div class="color-legend-item"><div class="color-dot" style="background:#fb7185"></div>이 지표가 낮을수록 교육 성과 우수</div>
+            <div class="color-legend-item"><div class="color-dot" style="background:#38bdf8"></div>이 지표가 높을수록 교육 성과 우수</div>
+          </div>
         </div>
       </div>
     </div>
@@ -155,17 +199,19 @@
         <div class="section-tag">SECTION 03</div>
         <h2 class="section-title">"비슷한 형편, 완전히 다른 교실"</h2>
         <p class="section-desc">
-          아래 점들은 각 국가를 의미합니다. 같은 경제 수준이더라도 위로 갈수록 학습이 부진하고, 아래로 갈수록 우수합니다. 우리는 유독 성과가 좋은 <b>기적의 국가(하단 파란 점)</b>들을 분석했습니다.
+          아래 차트에서 각 점은 하나의 국가입니다. <strong>가로축 오른쪽</strong>으로 갈수록 GDP가 높고,
+          <strong>세로축 위</strong>로 갈수록 Learning Poverty가 심각합니다.
+          점선은 "이 정도 GDP면 보통 이 정도 성과를 냄"이라는 평균 예측선입니다. 우리는 유독 점선 <em>아래</em>에 위치한 <b>기적의 국가들</b>에 주목했습니다.
         </p>
       </div>
 
       <div class="scatter-layout">
         <!-- 산점도 -->
         <div class="glass-card scatter-block">
-          <h3 class="chart-title">경제력 대비 교육 성과 비교</h3>
+          <h3 class="chart-title">GDP 대비 Learning Poverty 성과 비교</h3>
           <p class="chart-note">
-            <span class="dot-legend pos">●</span> 교육 우수 국가 (기대 이상)&ensp;
-            <span class="dot-legend neg">●</span> 교육 위기 국가 (기대 이하)&ensp;
+            <span class="dot-legend pos">●</span> 기적의 국가 — GDP 대비 기대 이상의 성과&ensp;
+            <span class="dot-legend neg">●</span> 위기 국가 — GDP 대비 기대 이하의 성과&ensp;
             <span class="dot-legend mid">●</span> 일반 국가
           </p>
           <div id="scatter-container"></div>
@@ -173,8 +219,8 @@
 
         <!-- TOP 5 카드 -->
         <div class="top5-stack">
-          <h3 class="top5-title">🏆 경제력을 뛰어넘은 국가 TOP 5</h3>
-          <p class="top5-note">비슷한 소득 수준의 국가들보다 압도적으로 좋은 성과를 냈습니다.</p>
+          <h3 class="top5-title">🏆 GDP를 뛰어넘은 국가 TOP 5</h3>
+          <p class="top5-note">비슷한 GDP 수준의 국가들보다 압도적으로 낮은 Learning Poverty율을 달성했습니다.</p>
           <div id="top5-cards"></div>
         </div>
       </div>
@@ -188,19 +234,29 @@
         <div class="section-tag">SECTION 04</div>
         <h2 class="section-title">가난을 이겨낸 국가들의 공통점</h2>
         <p class="section-desc">
-          앞서 확인한 '교육 우수 국가'들은 무엇이 달랐을까요? 데이터를 분석한 결과, 단순히 돈(예산)의 문제가 아니었습니다.
+          앞서 찾은 '기적의 국가'들은 무엇이 달랐을까요?
+          GDP 효과를 수학적으로 제거한 뒤, 우수 국가 그룹과 나머지 국가 그룹을 비교했습니다.
+          결론은 단순히 예산의 문제가 아니었습니다.
         </p>
       </div>
 
       <div class="two-col">
         <div class="glass-card chart-block tall">
-          <h3 class="chart-title">어떤 점이 가장 달랐을까?</h3>
-          <p class="chart-note">막대가 우측으로 길수록 우수 국가들이 <b>가장 신경 쓴 핵심 요인</b>임을 뜻합니다.</p>
+          <h3 class="chart-title">무엇이 가장 큰 차이를 만들었을까?</h3>
+          <p class="chart-note">
+            GDP가 같다고 가정했을 때, 우수 국가와 나머지 국가 사이에서 <strong>가장 두드러진 차이</strong>를 보인 요인입니다.
+            막대 길이는 효과 크기(Cohen's d)로, <strong>0.5 이상이면 주목할 만한 차이, 0.8 이상이면 압도적 차이</strong>입니다.
+            색이 진한 파란 막대는 통계적으로 확실한 결과(p&lt;0.05), 회색은 우연일 가능성이 있습니다.
+          </p>
           <div class="chart-wrap tall"><canvas id="cohensDChart"></canvas></div>
         </div>
         <div class="glass-card chart-block tall">
-          <h3 class="chart-title">소득 그룹별 맞춤 처방</h3>
-          <p class="chart-note">각 나라의 형편(소득 수준)에 따라 가장 시급하게 챙겨야 할 요인이 다릅니다.</p>
+          <h3 class="chart-title">소득 수준별 맞춤 처방</h3>
+          <p class="chart-note">
+            같은 요인이라도 나라의 소득 수준에 따라 우선순위가 달라집니다.
+            예를 들어, 최저소득 국가에서는 <strong>전기 보급</strong>이 가장 시급하지만,
+            저소득 국가에서는 <strong>10대 출산율 감소</strong>가 핵심입니다.
+          </p>
           <div id="quartile-heatmap"></div>
         </div>
       </div>
@@ -208,8 +264,10 @@
       <div class="insight-banner glass-card">
         <div class="insight-icon">💡</div>
         <div class="insight-text">
-          <strong>데이터가 알려주는 핵심 인사이트</strong><br>
-          여학생들이 일찍 학업을 포기하지 않도록 돕는 것(<strong>10대 출산율 감소</strong>)이 가장 결정적인 역할을 했습니다. 또한 아이들이 건강하게 자랄 수 있는 환경(<strong>유아 사망률 감소, 의사 확보</strong>)과 <strong>충분한 교사</strong>가 필수적이었습니다. 반면, <strong>단순히 예산을 늘리는 것만으로는 큰 효과를 보지 못했습니다.</strong>
+          <strong>핵심 발견 — GDP를 제거한 뒤 드러난 진짜 성공 요인</strong><br>
+          여학생들이 학업을 중단하지 않도록 하는 것(<strong>10대 출산율 감소, Cohen's d = -0.92</strong>)이 가장 결정적이었습니다.
+          또한 아이들이 건강하게 자랄 수 있는 환경(<strong>유아 사망률 감소, 의사 수 확보</strong>)과 <strong>적정한 교사 수급</strong>이 필수였습니다.
+          반면, <strong>단순히 교육 예산 비중만 늘리는 것은 통계적으로 유의한 효과가 없었습니다 (p = 0.49).</strong>
         </div>
       </div>
     </div>
@@ -220,37 +278,47 @@
     <div class="container">
       <div class="section-header">
         <div class="section-tag">SECTION 05</div>
-        <h2 class="section-title">예산보다 중요한 것은 투명한 시스템입니다</h2>
+        <h2 class="section-title">예산보다 중요한 것 — 투명한 시스템</h2>
         <p class="section-desc">
-          "그럼 교육 예산을 무조건 늘리면 해결될까요?" 놀랍게도 아닙니다. 국가의 시스템이 투명하고 안정적일 때 비로소 예산이 빛을 발합니다.
+          앞선 17개 요인 분석에서 <strong>교육지출(%GDP)은 상관계수 -0.331로 꼴찌</strong>였습니다.
+          "돈을 더 써도 왜 안 좋아지지?" 이 의문에서 출발한 심층 분석입니다.
+          GDP와 거버넌스를 동시에 통제하는 다중 회귀 분석을 통해, 교육 예산과 거버넌스 각각의 독립 효과를 분리했습니다.
         </p>
       </div>
 
       <div class="two-col">
         <div class="glass-card chart-block">
-          <h3 class="chart-title">어떤 정책이 더 극적인 개선을 이끌까요?</h3>
-          <p class="chart-note">막대가 우측으로 길수록 교육 위기 해결에 더 큰 도움이 됩니다.</p>
+          <h3 class="chart-title">교육 예산 vs 거버넌스 — 독립적 효과 비교</h3>
+          <p class="chart-note">
+            GDP와 다른 변수를 통제한 뒤, 두 정책의 <strong>순수한 독립 효과</strong>를 비교한 결과입니다.
+            막대가 왼쪽(음수)으로 길수록 Learning Poverty율을 <strong>낮추는 효과</strong>가 크다는 뜻입니다.
+            색이 진한 막대는 통계적으로 확실한 결과(p&lt;0.05), 흐린 막대는 효과가 우연과 구분되지 않는 수준입니다.
+          </p>
           <div class="chart-wrap"><canvas id="a2CoeffChart"></canvas></div>
         </div>
-        <div class="glass-card chart-block" style="display: flex; flex-direction: column; justify-content: center;">
-          <h3 class="chart-title" style="margin-bottom: 24px; font-size: 1.2rem;">📊 데이터 팩트 체크</h3>
-          <ul style="list-style: none; padding: 0; color: var(--text-1); line-height: 1.8; font-size: 0.95rem;">
-            <li style="margin-bottom: 24px;">
-              <strong style="color: var(--danger); font-size: 1.1rem;">Q. 예산을 늘리면 바로 좋아지나요?</strong><br>
-              <span style="color: var(--text-2);">A. 아닙니다. 데이터 분석 결과, 단순히 교육 예산만 늘린 국가들은 뚜렷한 성과를 보지 못했습니다. (위 그래프의 짧은 막대 참고)</span>
-            </li>
-            <li>
-              <strong style="color: var(--success); font-size: 1.1rem;">Q. 그럼 무엇부터 해결해야 하나요?</strong><br>
-              <span style="color: var(--text-2);">A. <strong>정부 시스템의 투명성(거버넌스)</strong>입니다. 예산이 새어나가지 않고 제대로 쓰일 수 있는 투명한 시스템이 갖춰질 때 교육 성과가 가장 빠르고 확실하게 좋아졌습니다.</span>
-            </li>
-          </ul>
+        <div class="glass-card chart-block" style="display: flex; flex-direction: column; justify-content: center; gap: 20px; padding: 28px;">
+          <h3 class="chart-title" style="font-size: 1.1rem;">📊 데이터 팩트 체크</h3>
+          <div style="border-left: 3px solid var(--danger); padding-left: 14px;">
+            <p style="font-size: 0.85rem; font-weight: 700; color: var(--danger); margin-bottom: 6px;">Q. 교육 예산을 늘리면 바로 좋아지나요?</p>
+            <p style="font-size: 0.82rem; color: var(--text-2); line-height: 1.65;">아닙니다. 다중 회귀 분석 결과 교육지출의 회귀 계수 β = +0.08 (p = 0.97), 사실상 제로에 가깝습니다. 17개 요인 단순 상관에서도 꼴찌(-0.331)였습니다.</p>
+          </div>
+          <div style="border-left: 3px solid var(--success); padding-left: 14px;">
+            <p style="font-size: 0.85rem; font-weight: 700; color: var(--success); margin-bottom: 6px;">Q. 그럼 무엇이 결정적인가요?</p>
+            <p style="font-size: 0.82rem; color: var(--text-2); line-height: 1.65;"><strong>거버넌스(정부 시스템 투명성)</strong>입니다. GDP를 통제한 후에도 거버넌스 점수 1단계 상승 시 Learning Poverty율이 평균 <strong>16.6%p 감소</strong>(β = -16.6, p &lt; 0.001)했습니다. 1,000번 무작위 재샘플링(부트스트래핑)으로 재검증해도 동일한 결과가 나왔습니다.</p>
+          </div>
+          <div style="border-left: 3px solid var(--accent); padding-left: 14px;">
+            <p style="font-size: 0.85rem; font-weight: 700; color: var(--accent); margin-bottom: 6px;">Q. 예산과 거버넌스를 함께 올리면 시너지가 있나요?</p>
+            <p style="font-size: 0.82rem; color: var(--text-2); line-height: 1.65;">분석 결과 교호작용 효과는 통계적으로 확인되지 않았습니다(p = 0.84). 거버넌스 자체가 독립적으로 강력한 변수입니다.</p>
+          </div>
         </div>
       </div>
 
       <div class="insight-banner glass-card">
         <div class="insight-icon">💡</div>
         <div class="insight-text">
-          교육을 살리기 위해서는 <strong>"얼마나 돈을 많이 쓰는가"보다 "얼마나 깨끗하고 효율적으로 돈을 쓰는가"</strong>가 훨씬 중요합니다. 깨진 독에 물을 붓는 것보다 독을 수리하는 것이 먼저입니다.
+          <strong>"얼마나 쓰는가"보다 "얼마나 잘 운영하는가"가 결정적입니다.</strong><br>
+          거버넌스 1단계 개선 시 Learning Poverty율 평균 <strong>16.6%p 감소</strong> (GDP 통제 후, p&lt;0.001 / 모델 R² = 0.618).
+          깨진 독에 물을 붓는 것보다, 먼저 독을 수리해야 합니다.
         </div>
       </div>
     </div>
@@ -263,7 +331,7 @@
         <div class="section-tag">SECTION 06</div>
         <h2 class="section-title">아이들을 위한 행동 제안</h2>
         <p class="section-desc">
-          데이터 분석을 통해 확인한, 교육 위기를 가장 빠르고 확실하게 해결할 수 있는 4가지 가이드라인입니다.
+          데이터 분석으로 확인한, Learning Poverty를 가장 빠르고 확실하게 해결할 수 있는 4가지 제안입니다.
         </p>
       </div>
       <div class="policy-grid" id="policy-grid"></div>
@@ -274,16 +342,15 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
-        <div class="footer-brand">
-          The Silent Crisis <span class="footer-version">v2.0</span>
-        </div>
+        <div class="footer-brand">The Silent Crisis <span class="footer-version">v2.0</span></div>
         <div class="footer-badges">
           <span class="badge">World Bank 데이터 활용</span>
           <span class="badge">105개국 심층 분석</span>
+          <span class="badge">다중 회귀 · Mann-Whitney · Cohen's d</span>
         </div>
       </div>
       <p class="footer-note">
-        본 대시보드는 복잡한 데이터 속에 숨겨진 의미를 찾아내어 누구나 쉽게 이해할 수 있도록 구성되었습니다.
+        본 대시보드는 복잡한 데이터 속에 숨겨진 의미를 누구나 쉽게 이해할 수 있도록 구성했습니다.
         The Silent Crisis Project © 2026
       </p>
     </div>
