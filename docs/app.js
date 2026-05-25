@@ -174,14 +174,12 @@ function buildFactorsCharts() {
   // 17개 통합 기준 TOP 5 (유아사망률, GDP, 발육부진율, 10대출산율, 여성조혼율)
   const v1Labels = ['유아 사망률', 'GDP (1인당 소득)', '아동 발육부진율', '10대 출산율', '여성 조혼율'];
   const v1Values = [0.878, 0.845, 0.845, 0.837, 0.810];
-  // 상관관계 방향에 따른 색상 구분: 위기 요인(빨강), 안전 요인(파랑)
-  const v1Colors = ['#fb7185', '#38bdf8', '#fb7185', '#fb7185', '#fb7185'];
 
   new Chart(document.getElementById('factorsV1Chart'), {
     type: 'bar',
     data: {
       labels: v1Labels,
-      datasets: [{ label: '상관계수(절댓값)', data: v1Values, backgroundColor: v1Colors, borderRadius: 6 }]
+      datasets: [{ label: '상관계수(절댓값)', data: v1Values, backgroundColor: '#38bdf8', borderRadius: 6 }]
     },
     options: {
       indexAxis: 'y', responsive: true, maintainAspectRatio: false,
