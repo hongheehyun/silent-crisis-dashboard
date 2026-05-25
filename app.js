@@ -243,6 +243,7 @@ function buildScatter() {
     .attr('y', 15)
     .attr('text-anchor', 'end')
     .attr('fill', '#fb7185')
+    .attr('opacity', 0.6)
     .attr('font-size', 11)
     .attr('font-weight', 700)
     .text('▲ 기대보다 부진한 영역 (위기 국가)');
@@ -252,6 +253,7 @@ function buildScatter() {
     .attr('y', iH - 15)
     .attr('text-anchor', 'start')
     .attr('fill', '#38bdf8')
+    .attr('opacity', 0.65)
     .attr('font-size', 11)
     .attr('font-weight', 700)
     .text('▼ 기대보다 우수한 영역 (기적의 국가)');
