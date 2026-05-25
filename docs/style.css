@@ -461,9 +461,16 @@ a { color: inherit; text-decoration: none; }
   .nav-links { display: none; }
   .country-panel { right: 12px; left: 12px; width: auto; top: auto; bottom: 80px; transform: none; }
   .country-panel.hidden { transform: translateY(20px); }
-  #scatter-container { height: 320px; }
+  #scatter-container, #map-container { height: auto !important; }
 }
 @media (max-width: 600px) {
   .section { padding: 70px 0 50px; }
   .hero-title { font-size: 2.6rem; letter-spacing: -2px; }
+}
+
+/* D3 차트 반응형 종횡비 보장 */
+#scatter-container svg, #map-container svg {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
 }
