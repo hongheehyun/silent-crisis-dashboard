@@ -36,6 +36,7 @@ body {
   overflow-x: hidden;
   user-select: none; /* 텍스트 커서 방지 (드래그 불가) */
   -webkit-user-select: none;
+  word-break: keep-all; /* 한글 단어 단위 줄바꿈 적용 */
 }
 a { color: inherit; text-decoration: none; }
 
@@ -265,8 +266,18 @@ a { color: inherit; text-decoration: none; }
 .chart-block.tall { min-height: 460px; }
 
 /* 산점도 */
-.scatter-layout { display: grid; grid-template-columns: 1fr 340px; gap: 24px; align-items: start; }
-.scatter-block { padding: 24px; }
+.scatter-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 24px;
+  align-items: stretch; /* 세로 높이를 나란히 stretch로 설정 */
+}
+.scatter-block {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 #scatter-container { width: 100%; height: 440px; }
 .dot-legend { font-size: 1rem; }
 .dot-legend.pos { color: var(--success); }
@@ -274,13 +285,28 @@ a { color: inherit; text-decoration: none; }
 .dot-legend.mid { color: var(--neutral); }
 
 /* TOP 5 카드 */
+.top5-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 .top5-title { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
 .top5-note  { font-size: 0.78rem; color: var(--text-2); margin-bottom: 16px; }
+#top5-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+  justify-content: space-between; /* 카드가 세로 전체를 균등하게 채우도록 수정 */
+}
 .top5-card {
   background: var(--glass); border: 1px solid var(--glass-border);
-  border-radius: var(--radius-sm); padding: 14px 16px; margin-bottom: 10px;
+  border-radius: var(--radius-sm); padding: 14px 16px;
   display: flex; align-items: center; gap: 14px;
   transition: background 0.2s;
+  flex-grow: 1; /* 세로 높이 정렬 대응 */
+  align-items: center;
 }
 .top5-card:hover { background: var(--glass-hover); }
 .top5-rank {

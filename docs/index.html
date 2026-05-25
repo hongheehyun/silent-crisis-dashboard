@@ -59,8 +59,9 @@
         <div class="def-icon">📖</div>
         <div class="def-text">
           <strong>Learning Poverty(학습 빈곤)란?</strong><br>
-          10세가 되도록 간단한 글을 읽고 이해하지 못하는 아동의 비율입니다.
-          단순히 학교에 다니는지를 넘어, <em>실제로 기초적인 학습이 이루어지고 있는지</em>를 보여주는 핵심 지표입니다.
+          10세가 되도록 글을 읽고 이해하지 못하는 아동의 비율로, 두 가지를 합산합니다:<br>
+          ① 학교를 다니지만 최소 읽기 수준에 미달하는 아이들<br>
+          ② 학교 자체를 다니지 못하는 아이들 (전원 미달로 간주)
         </div>
       </div>
 
@@ -69,14 +70,14 @@
         <div class="kpi-card glass-card" id="kpi-avg">
           <div class="kpi-icon danger">📉</div>
           <div class="kpi-value counter" data-target="39.7" data-suffix="%">0%</div>
-          <div class="kpi-label">전 세계 평균 Learning Poverty율</div>
+          <div class="kpi-label">전 세계 평균 Learning Poverty</div>
           <div class="kpi-sub">105개국 분석 기준</div>
         </div>
         <div class="kpi-card glass-card" id="kpi-children">
-          <div class="kpi-icon danger">👧</div>
+          <div class="kpi-icon danger">🧒</div>
           <div class="kpi-value counter" data-target="3.9" data-suffix="억 명">0억 명</div>
           <div class="kpi-label">전 세계 Learning Poverty 아동 수</div>
-          <div class="kpi-sub">기초 문해력 미달 아동 추산 (World Bank)</div>
+          <div class="kpi-sub">기초 문해력 미달 아동 추산</div>
         </div>
         <div class="kpi-card glass-card" id="kpi-n">
           <div class="kpi-icon primary">🌍</div>
@@ -131,12 +132,11 @@
         <div class="section-tag">SECTION 02</div>
         <h2 class="section-title">무엇이 아이들의 Learning Poverty를 만들까요?</h2>
         <p class="section-desc">
-          세계은행 데이터를 바탕으로 보건, 경제, 교육, 인프라, 거버넌스 등 전 세계 아동들의 Learning Poverty에 영향을 주는 다양한 사회·경제적 요인들을 다각도로 비교해 보았습니다.
+          세계은행 데이터를 바탕으로 보건, 경제, 교육, 인프라, 거버넌스 등<br>전 세계 아동들의 Learning Poverty에 영향을 주는 다양한 사회·경제적 요인들을 다각도로 비교해 보았습니다.
         </p>
       </div>
 
       <div class="glass-card chart-block" style="max-width: 800px; margin: 0 auto;">
-        <div class="chart-tag old">단순 상관관계</div>
         <h3 class="chart-title">17개 요인을 비교해 상관관계를 분석했습니다</h3>
         <p class="chart-note">
           경제·보건·교육·인프라·거버넌스 분야 <strong>총 17개 요인</strong>과 Learning Poverty의 관계를 분석했습니다.
@@ -224,7 +224,7 @@
         <p class="section-desc">
           앞서 찾은 '기적의 국가'들은 무엇이 달랐을까요?
           GDP 효과를 수학적으로 제거한 뒤, 우수 국가 그룹과 나머지 국가 그룹을 비교했습니다.
-          결론은 단순히 예산의 문제가 아니었습니다.
+          결론은 단순히 국가 경제 수준 차이의 문제가 아니었습니다.
         </p>
       </div>
 
@@ -234,7 +234,7 @@
           <p class="chart-note">
             GDP가 같다고 가정했을 때, 우수 국가와 나머지 국가 사이에서 <strong>가장 두드러진 차이</strong>를 보인 요인입니다.
             막대 길이는 효과 크기(Cohen's d)로, <strong>0.5 이상이면 주목할 만한 차이, 0.8 이상이면 압도적 차이</strong>입니다.
-            색이 진한 파란 막대는 통계적으로 확실한 결과(p&lt;0.05), 회색은 우연일 가능성이 있습니다.
+            색이 진한 파란 막대는 통계적으로 확실한 결과, 회색은 우연일 가능성이 있습니다.
           </p>
           <div class="chart-wrap tall"><canvas id="cohensDChart"></canvas></div>
         </div>
@@ -252,10 +252,10 @@
       <div class="insight-banner glass-card">
         <div class="insight-icon">💡</div>
         <div class="insight-text">
-          <strong>핵심 발견 — GDP를 제거한 뒤 드러난 진짜 성공 요인</strong><br>
-          여학생들이 학업을 중단하지 않도록 하는 것(<strong>10대 출산율 감소, Cohen's d = -0.92</strong>)이 가장 결정적이었습니다.
+          <strong>핵심 발견 — GDP를 제거한 뒤 드러난 진짜 핵심 요인</strong><br>
+          여학생들이 학업을 중단하지 않도록 하는 것(<strong>10대 출산율 감소</strong>)이 가장 결정적이었습니다.
           또한 아이들이 건강하게 자랄 수 있는 환경(<strong>유아 사망률 감소, 의사 수 확보</strong>)과 <strong>적정한 교사 수급</strong>이 필수였습니다.
-          반면, <strong>단순히 교육 예산 비중만 늘리는 것은 통계적으로 유의한 효과가 없었습니다 (p = 0.49).</strong>
+          반면, <strong>단순히 교육 예산 비중만 늘리는 것은 통계적으로 유의한 효과가 없었습니다.</strong>
         </div>
       </div>
     </div>
@@ -270,7 +270,7 @@
         <p class="section-desc">
           앞선 17개 요인 분석에서 <strong>교육지출(%GDP)은 상관계수 -0.331로 꼴찌</strong>였습니다.
           "돈을 더 써도 왜 안 좋아지지?" 이 의문에서 출발한 심층 분석입니다.
-          GDP와 거버넌스를 동시에 통제하는 다중 회귀 분석을 통해, 교육 예산과 거버넌스 각각의 독립 효과를 분리했습니다.
+          GDP와 거버넌스를 동시에 통제하는 다중 회귀 분석을 통해, 교육 예산과 거버넌스 각각의 고유한 영향력을 정밀하게 검증해 보았습니다.
         </p>
       </div>
 
@@ -323,7 +323,7 @@
           </div>
           <div style="border-left: 3px solid var(--success); padding-left: 14px;">
             <p style="font-size: 0.85rem; font-weight: 700; color: var(--success); margin-bottom: 6px;">Q. 그럼 무엇이 결정적인가요?</p>
-            <p style="font-size: 0.82rem; color: var(--text-2); line-height: 1.65;"><strong>거버넌스(정부 시스템 투명성)</strong>입니다. GDP를 통제한 후에도 거버넌스 점수 1단계 상승 시 Learning Poverty율이 평균 <strong>16.6%p 감소</strong>(β = -16.6, p &lt; 0.001)했습니다. 1,000번 무작위 재샘플링(부트스트래핑)으로 재검증해도 동일한 결과가 나왔습니다.</p>
+            <p style="font-size: 0.82rem; color: var(--text-2); line-height: 1.65;"><strong>거버넌스(정부 시스템 투명성)</strong>입니다. GDP를 통제한 후에도 거버넌스 점수 1단계 상승 시 Learning Poverty율이 평균 <strong>16.6%p 감소</strong>(β = -16.6, p &lt; 0.001)했습니다.</p>
           </div>
           <div style="border-left: 3px solid var(--accent); padding-left: 14px;">
             <p style="font-size: 0.85rem; font-weight: 700; color: var(--accent); margin-bottom: 6px;">Q. 예산과 거버넌스를 함께 올리면 시너지가 있나요?</p>
@@ -336,7 +336,7 @@
         <div class="insight-icon">💡</div>
         <div class="insight-text">
           <strong>"얼마나 쓰는가"보다 "얼마나 잘 운영하는가"가 결정적입니다.</strong><br>
-          거버넌스 1단계 개선 시 Learning Poverty율 평균 <strong>16.6%p 감소</strong> (GDP 통제 후, p&lt;0.001 / 모델 R² = 0.618).
+          거버넌스 1단계 개선 시 Learning Poverty율 평균 <strong>16.6%p 감소</strong>.
           깨진 독에 물을 붓는 것보다, 먼저 독을 수리해야 합니다.
         </div>
       </div>

@@ -174,12 +174,14 @@ function buildFactorsCharts() {
   // 17개 통합 기준 TOP 5 (유아사망률, GDP, 발육부진율, 10대출산율, 여성조혼율)
   const v1Labels = ['유아 사망률', 'GDP (1인당 소득)', '아동 발육부진율', '10대 출산율', '여성 조혼율'];
   const v1Values = [0.878, 0.845, 0.845, 0.837, 0.810];
+  // 상관관계 방향에 따른 색상 구분: 위기 요인(빨강), 안전 요인(파랑)
+  const v1Colors = ['#fb7185', '#38bdf8', '#fb7185', '#fb7185', '#fb7185'];
 
   new Chart(document.getElementById('factorsV1Chart'), {
     type: 'bar',
     data: {
       labels: v1Labels,
-      datasets: [{ label: '상관계수(절댓값)', data: v1Values, backgroundColor: '#475569', borderRadius: 6 }]
+      datasets: [{ label: '상관계수(절댓값)', data: v1Values, backgroundColor: v1Colors, borderRadius: 6 }]
     },
     options: {
       indexAxis: 'y', responsive: true, maintainAspectRatio: false,
@@ -227,7 +229,7 @@ function buildScatter() {
   svg.append('text').attr('x', iW - 10).attr('y', 16)
     .attr('text-anchor', 'end').attr('fill', 'rgba(251,113,133,0.55)').attr('font-size', 11).attr('font-weight', 700)
     .text('▲ 기대보다 부진한 영역 (위기 국가)');
-  svg.append('text').attr('x', iW - 10).attr('y', iH - 8)
+  svg.append('text').attr('x', iW - 10).attr('y', iH - 24)
     .attr('text-anchor', 'end').attr('fill', 'rgba(56,189,248,0.55)').attr('font-size', 11).attr('font-weight', 700)
     .text('▼ 기대보다 우수한 영역 (기적의 국가)');
 
@@ -381,12 +383,6 @@ function buildA2Charts() {
 // ── 정책 제언 카드 ─────────────────────────────────────
 function buildPolicyCards() {
   const grid = document.getElementById('policy-grid');
-  const evidenceMap = {
-    1: '10대 출산율: Cohen\'s d = -0.92, p = 0.0001 — 가장 강력한 독립 성공요인',
-    2: '의사 수: d = +0.78 / 교사-학생 비율: d = -0.68 — 교육지출(p=0.49)은 비유의',
-    3: '거버넌스 β = -16.6, p < 0.001 — GDP 통제 후에도 16.6%p 감소',
-    4: 'TOP 5 국가 평균 29%p 개선 — 스리랑카·베트남·베냉 모범 사례'
-  };
 
   grid.innerHTML = DATA.policy_recommendations.map(p => `
     <div class="policy-card">
@@ -395,7 +391,6 @@ function buildPolicyCards() {
       <div class="policy-title">${p.title}</div>
       <div class="policy-subtitle">${p.subtitle}</div>
       <div class="policy-headline">${p.headline}</div>
-      <div class="policy-evidence">📊 ${evidenceMap[p.id] || '데이터 분석으로 확인된 핵심 요인'}</div>
       <div class="policy-actions">
         ${p.actions.map(a => `<div class="policy-action">${a}</div>`).join('')}
       </div>
