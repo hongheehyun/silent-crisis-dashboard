@@ -230,13 +230,6 @@ function buildScatter() {
   const slope = num / den, intercept = yMean - slope * xMean;
   const xExt = d3.extent(valid, d => d.log_gdp);
 
-  // 위/아래 영역 텍스트
-  svg.append('text').attr('x', iW - 10).attr('y', 16)
-    .attr('text-anchor', 'end').attr('fill', 'rgba(251,113,133,0.55)').attr('font-size', 11).attr('font-weight', 700)
-    .text('▲ 기대보다 부진한 영역 (위기 국가)');
-  svg.append('text').attr('x', 15).attr('y', iH - 40) // 데이터 점들이 전혀 없는 안전 구역인 좌측 하단으로 이동
-    .attr('text-anchor', 'start').attr('fill', 'rgba(56,189,248,0.65)').attr('font-size', 11).attr('font-weight', 700)
-    .text('▼ 기대보다 우수한 영역 (기적의 국가)');
 
   // 회귀선
   svg.append('line')
@@ -389,10 +382,10 @@ function buildA2Charts() {
 function buildPolicyCards() {
   const grid = document.getElementById('policy-grid');
   const evidenceMap = {
-    1: '분석 요약: 조혼 방지 및 여아 교육 지속이 가장 확실한 성공 동력',
-    2: '분석 요약: 교육 예산 증액 자체보다 기초 보건 위생과 교사 확보가 우선',
-    3: '분석 요약: 행정 시스템 투명성(거버넌스)이 예산의 효율을 결정하는 전제 조건',
-    4: '분석 요약: 경제적 한계를 극복한 베트남, 스리랑카 등의 교육 혁신 벤치마킹 필요'
+    1: '조혼 방지 및 여아 교육 지속이 가장 확실한 성공 동력',
+    2: '교육 예산 증액 자체보다 기초 보건 위생과 교사 확보가 우선',
+    3: '행정 시스템 투명성(거버넌스)이 예산의 효율을 결정하는 전제 조건',
+    4: '경제적 한계를 극복한 베트남, 스리랑카 등의 교육 혁신 벤치마킹 필요'
   };
 
   grid.innerHTML = DATA.policy_recommendations.map(p => `
