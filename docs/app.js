@@ -375,48 +375,7 @@ function buildQuartileHeatmap() {
 
 // ── A2 회귀 계수 차트 ──────────────────────────────────
 function buildA2Charts() {
-  const coeffs = DATA.a2.coefficients;
-  const budgetData = coeffs.find(c => c.label.includes('교육지출 β'));
-  const govData    = coeffs.find(c => c.label.includes('거버넌스 β'));
-  if (!budgetData || !govData) return;
-
-  // 회귀 계수 원값 사용 (LP를 낮추는 방향이 음수)
-  const labels = ['교육지출 증가 효과\n(β = +0.08, p = 0.97)', '거버넌스 개선 효과\n(β = −16.6, p < 0.001)'];
-  const betas  = [budgetData.beta, govData.beta]; // +0.08, -16.596
-  const colors = [
-    budgetData.significant ? '#38bdf8' : 'rgba(127,140,141,0.45)',
-    govData.significant    ? '#38bdf8' : 'rgba(127,140,141,0.45)'
-  ];
-
-  new Chart(document.getElementById('a2CoeffChart'), {
-    type: 'bar',
-    data: {
-      labels,
-      datasets: [{ label: '회귀 계수 (β)', data: betas, backgroundColor: colors, borderRadius: 8 }]
-    },
-    options: {
-      indexAxis: 'y', responsive: true, maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            label: ctx => {
-              if (ctx.dataIndex === 0) return '효과 없음 — 통계적으로 비유의 (p=0.97)';
-              return '거버넌스 1단계 ↑ → Learning Poverty 16.6%p ↓ (p<0.001)';
-            }
-          }
-        }
-      },
-      scales: {
-        x: {
-          ticks: { color: '#a8b5d0', font: { size: 10 } },
-          grid: { color: 'rgba(255,255,255,0.06)' }
-        },
-        y: { ticks: { color: '#a8b5d0', font: { size: 11 } }, grid: { display: false } }
-      },
-      layout: { padding: { right: 10 } }
-    }
-  });
+  // 차트 렌더링 로직 제거: index.html에서 메트릭 카드로 대체되었습니다.
 }
 
 // ── 정책 제언 카드 ─────────────────────────────────────
