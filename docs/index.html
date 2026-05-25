@@ -131,62 +131,42 @@
         <div class="section-tag">SECTION 02</div>
         <h2 class="section-title">무엇이 아이들의 Learning Poverty를 만들까요?</h2>
         <p class="section-desc">
-          GDP가 높을수록 교육 성과가 좋다는 건 사실입니다. 하지만 비슷한 GDP를 가진 나라들 사이에서도 결과는 크게 달라집니다.
-          우리는 데이터로 <b>진짜 원인</b>을 찾았습니다.
+          세계은행 데이터를 바탕으로 보건, 경제, 교육, 인프라, 거버넌스 등 전 세계 아동들의 Learning Poverty에 영향을 주는 다양한 사회·경제적 요인들을 다각도로 비교해 보았습니다.
         </p>
       </div>
 
-      <div class="two-col">
-        <!-- 왼쪽: 단순 상관관계 -->
-        <div class="glass-card chart-block">
-          <div class="chart-tag old">단순 비교</div>
-          <h3 class="chart-title">17개 요인을 수집해 상관관계를 분석했습니다</h3>
-          <p class="chart-note">
-            경제·보건·교육·인프라·거버넌스 분야 <strong>총 17개 요인</strong>과 Learning Poverty의 관계를 분석했습니다.
-            아래 그래프는 그 중 <strong>상위 5개 요인</strong>입니다. (막대가 길수록 Learning Poverty와 더 밀접하게 움직임)
-          </p>
-          <div class="chart-wrap"><canvas id="factorsV1Chart"></canvas></div>
-          <button class="toggle-btn" id="toggle-full-list" onclick="toggleFactorList()">▼ 17개 요인 전체 순위 보기</button>
-          <div class="factors-full-list" id="factors-full-list">
-            <table class="factors-full-table">
-              <thead><tr><th>순위</th><th>요인</th><th>상관계수</th><th>방향</th></tr></thead>
-              <tbody>
-                <tr class="rank-1-5"><td>1</td><td>유아 사망률</td><td>0.878</td><td>↑ 높을수록 위기</td></tr>
-                <tr class="rank-1-5"><td>2</td><td>GDP (1인당 소득)</td><td>-0.845</td><td>↓ 높을수록 안전</td></tr>
-                <tr class="rank-1-5"><td>3</td><td>아동 발육부진율</td><td>0.845</td><td>↑ 높을수록 위기</td></tr>
-                <tr class="rank-1-5"><td>4</td><td>10대 출산율</td><td>0.837</td><td>↑ 높을수록 위기</td></tr>
-                <tr class="rank-1-5"><td>5</td><td>여성 조혼율</td><td>0.810</td><td>↑ 높을수록 위기</td></tr>
-                <tr><td>6</td><td>정부 효율성 (거버넌스)</td><td>-0.798</td><td>↓ 높을수록 안전</td></tr>
-                <tr><td>7</td><td>전기 보급률</td><td>-0.793</td><td>↓ 높을수록 안전</td></tr>
-                <tr><td>8</td><td>평균 거버넌스 지수</td><td>-0.791</td><td>↓ 높을수록 안전</td></tr>
-                <tr><td>9</td><td>법치 수준</td><td>-0.784</td><td>↓ 높을수록 안전</td></tr>
-                <tr><td>10</td><td>의사 수 (1000명당)</td><td>-0.765</td><td>↓ 높을수록 안전</td></tr>
-                <tr><td>11</td><td>부패 통제 지수</td><td>-0.760</td><td>↓ 높을수록 안전</td></tr>
-                <tr><td>12</td><td>교사 1인당 학생 수</td><td>0.751</td><td>↑ 높을수록 위기</td></tr>
-                <tr><td>13</td><td>인터넷 사용률</td><td>-0.726</td><td>↓ 높을수록 안전</td></tr>
-                <tr><td>14</td><td>초등학교 수료율</td><td>-0.583</td><td>↓ 높을수록 안전</td></tr>
-                <tr><td>15</td><td>초등학교 순등록률</td><td>-0.568</td><td>↓ 높을수록 안전</td></tr>
-                <tr><td>16</td><td>교육 성비 지수</td><td>-0.369</td><td>↓ 높을수록 안전</td></tr>
-                <tr><td>17</td><td>교육지출 (%GDP)</td><td>-0.331</td><td>최하위 ⚠</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- 오른쪽: GDP 제거 후 진짜 요인 -->
-        <div class="glass-card chart-block">
-          <div class="chart-tag new">진짜 중요도</div>
-          <h3 class="chart-title">GDP 영향을 제거하고 찾아낸 진짜 원인</h3>
-          <p class="chart-note">
-            단순 비교에서는 "부자 나라가 유아 사망률도 낮고 교육도 좋다"는 당연한 결과만 나옵니다.
-            진짜 알고 싶은 건 <strong>"같은 GDP 수준의 나라들 사이에서 왜 차이가 나는가?"</strong>입니다.
-            이를 위해 GDP 효과를 수학적으로 제거(잔차 분석)한 뒤, 실제로 차이를 만드는 독립적인 요인을 추려냈습니다.
-          </p>
-          <div class="chart-wrap"><canvas id="factorsV2Chart"></canvas></div>
-          <div class="color-legend-row">
-            <div class="color-legend-item"><div class="color-dot" style="background:#fb7185"></div>이 지표가 낮을수록 교육 성과 우수</div>
-            <div class="color-legend-item"><div class="color-dot" style="background:#38bdf8"></div>이 지표가 높을수록 교육 성과 우수</div>
-          </div>
+      <div class="glass-card chart-block" style="max-width: 800px; margin: 0 auto;">
+        <div class="chart-tag old">단순 상관관계</div>
+        <h3 class="chart-title">17개 요인을 비교해 상관관계를 분석했습니다</h3>
+        <p class="chart-note">
+          경제·보건·교육·인프라·거버넌스 분야 <strong>총 17개 요인</strong>과 Learning Poverty의 관계를 분석했습니다.
+          아래 그래프는 그 중 상관관계가 가장 강하게 나타나는 <strong>상위 5개 요인</strong>입니다. (막대가 길수록 Learning Poverty와 밀접하게 연관됨)
+        </p>
+        <div class="chart-wrap" style="height: 260px;"><canvas id="factorsV1Chart"></canvas></div>
+        <button class="toggle-btn" id="toggle-full-list" onclick="toggleFactorList()" style="margin-top: 24px;">▼ 17개 요인 전체 순위 보기</button>
+        <div class="factors-full-list" id="factors-full-list">
+          <table class="factors-full-table">
+            <thead><tr><th>순위</th><th>요인</th><th>상관계수</th><th>방향</th></tr></thead>
+            <tbody>
+              <tr class="rank-1-5"><td>1</td><td>유아 사망률</td><td>0.878</td><td>↑ 높을수록 위기</td></tr>
+              <tr class="rank-1-5"><td>2</td><td>GDP (1인당 소득)</td><td>-0.845</td><td>↓ 높을수록 안전</td></tr>
+              <tr class="rank-1-5"><td>3</td><td>아동 발육부진율</td><td>0.845</td><td>↑ 높을수록 위기</td></tr>
+              <tr class="rank-1-5"><td>4</td><td>10대 출산율</td><td>0.837</td><td>↑ 높을수록 위기</td></tr>
+              <tr class="rank-1-5"><td>5</td><td>여성 조혼율</td><td>0.810</td><td>↑ 높을수록 위기</td></tr>
+              <tr><td>6</td><td>정부 효율성 (거버넌스)</td><td>-0.798</td><td>↓ 높을수록 안전</td></tr>
+              <tr><td>7</td><td>전기 보급률</td><td>-0.793</td><td>↓ 높을수록 안전</td></tr>
+              <tr><td>8</td><td>평균 거버넌스 지수</td><td>-0.791</td><td>↓ 높을수록 안전</td></tr>
+              <tr><td>9</td><td>법치 수준</td><td>-0.784</td><td>↓ 높을수록 안전</td></tr>
+              <tr><td>10</td><td>의사 수 (1000명당)</td><td>-0.765</td><td>↓ 높을수록 안전</td></tr>
+              <tr><td>11</td><td>부패 통제 지수</td><td>-0.760</td><td>↓ 높을수록 안전</td></tr>
+              <tr><td>12</td><td>교사 1인당 학생 수</td><td>0.751</td><td>↑ 높을수록 위기</td></tr>
+              <tr><td>13</td><td>인터넷 사용률</td><td>-0.726</td><td>↓ 높을수록 안전</td></tr>
+              <tr><td>14</td><td>초등학교 수료율</td><td>-0.583</td><td>↓ 높을수록 안전</td></tr>
+              <tr><td>15</td><td>초등학교 순등록률</td><td>-0.568</td><td>↓ 높을수록 안전</td></tr>
+              <tr><td>16</td><td>교육 성비 지수</td><td>-0.369</td><td>↓ 높을수록 안전</td></tr>
+              <tr><td>17</td><td>교육지출 (%GDP)</td><td>-0.331</td><td>최하위 ⚠</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -199,9 +179,7 @@
         <div class="section-tag">SECTION 03</div>
         <h2 class="section-title">"비슷한 형편, 완전히 다른 교실"</h2>
         <p class="section-desc">
-          아래 차트에서 각 점은 하나의 국가입니다. <strong>가로축 오른쪽</strong>으로 갈수록 GDP가 높고,
-          <strong>세로축 위</strong>로 갈수록 Learning Poverty가 심각합니다.
-          점선은 "이 정도 GDP면 보통 이 정도 성과를 냄"이라는 평균 예측선입니다. 우리는 유독 점선 <em>아래</em>에 위치한 <b>기적의 국가들</b>에 주목했습니다.
+          국가 경제력(GDP)은 아동 학습 빈곤의 70% 이상을 설명하는 가장 강력한 요인입니다. 하지만 과연 돈이 전부일까요? 경제적 여건이 비슷함에도 불구하고 유독 뛰어난 교육 성과를 내며 한계를 극복하는 나라들이 존재합니다. 가난한 환경 속에서도 아이들의 읽기 능력을 지켜낸 '진짜 성공의 비결'을 찾기 위해, 각 국가의 GDP 효과를 통제한 분석을 시작했습니다.
         </p>
       </div>
 
@@ -209,12 +187,22 @@
         <!-- 산점도 -->
         <div class="glass-card scatter-block">
           <h3 class="chart-title">GDP 대비 Learning Poverty 성과 비교</h3>
-          <p class="chart-note">
-            <span class="dot-legend pos">●</span> 기적의 국가 — GDP 대비 기대 이상의 성과&ensp;
-            <span class="dot-legend neg">●</span> 위기 국가 — GDP 대비 기대 이하의 성과&ensp;
-            <span class="dot-legend mid">●</span> 일반 국가
-          </p>
           <div id="scatter-container"></div>
+          
+          <!-- 그래프 아래로 이동한 설명 -->
+          <div class="scatter-caption-container" style="margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.08);">
+            <p style="font-size: 0.85rem; color: var(--text-2); line-height: 1.65; margin-bottom: 12px;">
+              💡 <strong>그래프 읽는 법:</strong> 각 점은 하나의 국가를 나타냅니다. 
+              <strong>가로축 오른쪽</strong>으로 갈수록 GDP가 높고, <strong>세로축 위</strong>로 갈수록 Learning Poverty가 심각합니다. 
+              가운데 푸른색 점선은 '국가 GDP 수준에 따른 평균적인 Learning Poverty 기대치'입니다. 
+              이 <strong>점선보다 훨씬 아래에 위치할수록</strong> 비슷한 경제력의 다른 나라들보다 압도적으로 뛰어난 교육 성과를 일궈낸 <b>기적의 국가들</b>입니다.
+            </p>
+            <p class="chart-note" style="margin: 0;">
+              <span class="dot-legend pos">●</span> 기적의 국가 — GDP 대비 기대 이상의 성과&ensp;
+              <span class="dot-legend neg">●</span> 위기 국가 — GDP 대비 기대 이하의 성과&ensp;
+              <span class="dot-legend mid">●</span> 일반 국가
+            </p>
+          </div>
         </div>
 
         <!-- TOP 5 카드 -->

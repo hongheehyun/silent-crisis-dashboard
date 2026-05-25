@@ -171,7 +171,7 @@ function showCountryPanel(c) {
 
 // ── 단순 비교 vs 진짜 중요도 차트 ──────────────────────
 function buildFactorsCharts() {
-  // 왼쪽: 17개 통합 기준 TOP 5 (유아사망률, GDP, 발육부진율, 10대출산율, 여성조혼율)
+  // 17개 통합 기준 TOP 5 (유아사망률, GDP, 발육부진율, 10대출산율, 여성조혼율)
   const v1Labels = ['유아 사망률', 'GDP (1인당 소득)', '아동 발육부진율', '10대 출산율', '여성 조혼율'];
   const v1Values = [0.878, 0.845, 0.845, 0.837, 0.810];
 
@@ -193,40 +193,6 @@ function buildFactorsCharts() {
       },
       scales: {
         x: { min: 0, max: 1, ticks: { color: '#a8b5d0' }, grid: { color: 'rgba(255,255,255,0.06)' } },
-        y: { ticks: { color: '#a8b5d0', font: { size: 11 } }, grid: { display: false } }
-      }
-    }
-  });
-
-  // 오른쪽: GDP 잔차화 후 Cohen's d — 빨강(음수=낮춰야 좋음) / 파랑(양수=높여야 좋음)
-  const sig = DATA.a1_factors.filter(f => f.p_value < 0.05).slice(0, 5);
-  const v2Labels = sig.map(f => f.label);
-  const v2Values = sig.map(f => Math.abs(f.cohens_d));
-  // cohens_d 음수 = 우수 국가가 "낮음" → 빨강, 양수 = 우수 국가가 "높음" → 파랑
-  const v2Colors = sig.map(f => f.cohens_d < 0 ? '#fb7185' : '#38bdf8');
-
-  new Chart(document.getElementById('factorsV2Chart'), {
-    type: 'bar',
-    data: {
-      labels: v2Labels,
-      datasets: [{ label: '효과 크기(Cohen\'s d)', data: v2Values, backgroundColor: v2Colors, borderRadius: 6 }]
-    },
-    options: {
-      indexAxis: 'y', responsive: true, maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            label: ctx => {
-              const f = sig[ctx.dataIndex];
-              const dir = f.cohens_d < 0 ? '우수 국가일수록 낮음' : '우수 국가일수록 높음';
-              return `효과 크기: ${Math.abs(f.cohens_d).toFixed(2)} (${dir}, p=${f.p_value.toFixed(4)})`;
-            }
-          }
-        }
-      },
-      scales: {
-        x: { min: 0, max: 1.2, ticks: { color: '#a8b5d0' }, grid: { color: 'rgba(255,255,255,0.06)' } },
         y: { ticks: { color: '#a8b5d0', font: { size: 11 } }, grid: { display: false } }
       }
     }
