@@ -237,6 +237,25 @@ function buildScatter() {
     .attr('x2', xScale(xExt[1])).attr('y2', yScale(intercept + slope * xExt[1]))
     .attr('stroke', '#4f8ef7').attr('stroke-width', 1.5).attr('stroke-dasharray', '6,4').attr('opacity', 0.7);
 
+  // 영역 가이드 텍스트 (우측 상단: 위기 국가 / 좌측 하단: 기적의 국가)
+  svg.append('text')
+    .attr('x', iW - 10)
+    .attr('y', 15)
+    .attr('text-anchor', 'end')
+    .attr('fill', '#fb7185')
+    .attr('font-size', 11)
+    .attr('font-weight', 700)
+    .text('▲ 기대보다 부진한 영역 (위기 국가)');
+
+  svg.append('text')
+    .attr('x', 10)
+    .attr('y', iH - 15)
+    .attr('text-anchor', 'start')
+    .attr('fill', '#38bdf8')
+    .attr('font-size', 11)
+    .attr('font-weight', 700)
+    .text('▼ 기대보다 우수한 영역 (기적의 국가)');
+
   const colorOf = g => g === 'positive' ? '#38bdf8' : g === 'negative' ? '#fb7185' : '#4a5568';
   const korNameMap = {
     'Sri Lanka': '스리랑카', 'Viet Nam': '베트남', 'Albania': '알바니아',
